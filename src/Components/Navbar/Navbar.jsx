@@ -43,7 +43,6 @@ const TopNav = () => {
                         <li><NavLink to={"/about"} style={navLinkStyle}>About</NavLink></li>
                         <li><NavLink to={"/contact"} style={navLinkStyle}>Contact</NavLink></li>
                         <li><NavLink to={"/services"} style={navLinkStyle}>Services</NavLink></li>
-                        
                     </ul>
                 </div>
             </div>
