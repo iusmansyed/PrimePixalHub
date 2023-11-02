@@ -1,4 +1,37 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  
+}
+
+.cursor-custom {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 0, 0, 0.712);
+  border-radius: 50%;
+  background-color: transparent;
+  pointer-events: none;
+  cursor: alias;
+  transform: translate(-50%, -50%);
+  /* transition: transform 0.1s ease, background-color 0.1s ease, border-color 0.1s ease; */
+  z-index: 1111111111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cursor-custom2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(255, 0, 0, 0.712);
+  border-radius: 50%;
+  background-color: black;
+  pointer-events: none;
+  cursor: alias;
+  transform: translate(-50%, -50%);
+  /* transition: transform 0.1s ease, background-color 0.1s ease, border-color 0.1s ease; */
+  z-index: 1111111111111;
+  left: 18px;
+  top: 18px;
 }
