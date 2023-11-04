@@ -25,7 +25,7 @@
     overflow: hidden;
 }
 
-video {
+.Video {
     position: absolute;
     top: 0;
     left: 0;
@@ -156,6 +156,82 @@ label {
 .scrollSec::-webkit-scrollbar-thumb:hover {
     background-color: black;
 }
-.scrollSec::-webkit-scrollbar-track{
+
+.scrollSec::-webkit-scrollbar-track {
     background-color: lightgray;
+}
+
+.seo_services {
+    background-image: url('../../assets/Images/services-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 130px 0px;
+}
+
+.text_wrapper {
+    text-align: center;
+}
+
+.text_wrapper h1:nth-child(1) {
+    font-family: bold;
+    color: black;
+    font-size: 50px;
+}
+
+.text_wrapper h1:nth-child(2) {
+    font-family: bold;
+    font-size: 50px;
+    color: red;
+}
+
+.text_wrapper h3 {
+    color: black;
+    font-family: reg;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.text_wrapper p {
+    font-family: reg;
+}
+
+.carousel {
+    height: 30vh;
+    border: 1px solid red;
+
+}
+
+.custom_Carousel {
+    border: 1px solid red;
+    height: 100px;
+}
+
+.seos {
+    padding: 70px 0;
+}
+
+.SeoWrapper {
+    padding-top: 70px;
+}
+
+.SeoWrapper h1 {
+    font-family: SemiBold;
+}
+
+.SeoWrapper p {
+    font-family: reg;
+    line-height: 30px;
+}
+
+.questions {
+    padding: 50px 0;
+}
+
+.questions h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+.AccWrapper{
+    padding: 70px 0 0;
 }

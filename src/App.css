@@ -35,3 +35,10 @@
   left: 18px;
   top: 18px;
 }
+
+.react-multi-carousel-track ul li {
+  flex: 1 1 auto;
+  position: relative;
+  width: 431px;
+  height: 35vh;
+}

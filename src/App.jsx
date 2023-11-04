@@ -15,7 +15,6 @@ function App() {
 
   useEffect(() => {
     const handleCursor = (e) => {
-      console.log(e.clientX, e.clientY);
       setX(e.clientX - 20)
       setY(e.clientY - 15)
     }
@@ -28,14 +27,14 @@ function App() {
 
   return (
     <>
-      <motion.div className='cursor-custom' animate={{
+      {/* <motion.div className='cursor-custom' animate={{
         x,
         y,
       }}>
         <motion.div className='cursor-custom2' animate={{
 
         }}></motion.div>
-      </motion.div>
+      </motion.div> */}
       <TopNav />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -9,10 +9,8 @@ const TopNav = () => {
         const handleScroll = () => {
             if (window.scrollY > 200) {
                 setScrolling(true);
-                console.log('scroll is working')
             } else {
                 setScrolling(false)
-                console.log('scroll is not working')
             }
         }
         window.addEventListener('scroll', handleScroll)
