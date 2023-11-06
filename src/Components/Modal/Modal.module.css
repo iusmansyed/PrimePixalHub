@@ -1,0 +1,31 @@
+@font-face {
+    font-family: bold;
+    src: url("../../assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: reg;
+    src: url("../../assets/Fonts/Poppins-Regular.ttf");
+}
+.custom_modal_width{
+    width: 80%;
+}
+.heading{
+font-family: bold;
+font-size: 25px;
+text-align: center;
+color: black;
+}
+.heading h3 span{
+color:  red;
+}
+.sbmt{
+    padding: 20px 0;
+}
+input{
+    font-family: reg;
+}
+textarea{
+    font-family: reg;
+    
+}

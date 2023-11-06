@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import styles from "./Home.module.css"
 import Video from "../../assets/Images/bgVid.mp4"
 import Buttons from '../../Components/Buttons/Buttons'
-import SideForm from '../../Components/SideForm/SideForm'
 import Lottie from 'lottie-react';
 import animationData from '../../assets/Lottie/Animation - 1698968147822.json';
 import Carousel from 'react-multi-carousel';
@@ -14,7 +13,18 @@ import HoverableCard from '../../Components/Cards/Cards'
 import { FaConnectdevelop } from "react-icons/fa"
 import Accordian from '../../Components/Accordian/Accordian'
 import Footer from '../../Components/Footer/Footer'
+import ModalPop from '../../Components/Modal/ModalPop'
+import ChatWidget from '../../Components/TawkTo/TawkToConfig'
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const openModal = () => {
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+  };
   const list = [
     {
       id: 1,
@@ -115,8 +125,8 @@ const Home = () => {
 
   return (
     <>
+
       <section className={styles.home}>
-        <SideForm />
         <div className={styles.banner_video}>
           <video className={styles.Video} autoPlay={true} loop={true} muted={true}>
             <source src={Video} type="video/mp4" />
@@ -131,35 +141,37 @@ const Home = () => {
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam unde, natus doloribus praesentium libero laudantium nesciunt ducimus laboriosam magni suscipit reiciendis sit sunt. Beatae optio asperiores dolorem eveniet reprehenderit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam unde, natus doloribus praesentium libero laudantium nesciunt ducimus laboriosam magni suscipit reiciendis sit sunt. Beatae optio asperiores dolorem eveniet reprehenderit!</p>
                     <div className={styles.btns}>
-                      <Buttons title={"Contact Us"} />
-                      <Buttons title={"Get A Qoute"} />
+                      <a href="tel:+798564312"><Buttons title={"Contact Us"} /></a>
+                      <Buttons title={"Get A Qoute"} onClick={openModal} />
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-5 ">
+
+                  <ModalPop show={showModal} handleClose={closeModal} />
                   <div className={styles.formSec}>
                     <h1>Rank Higher</h1>
                     <h3>With SEO By PrimePixelHub</h3>
                     <form>
                       <div className="form-group">
                         <label for="formGroupExampleInput">First Name</label>
-                        <input type="text" id="formGroupExampleInput" placeholder="Example input" />
+                        <input type="text" id="formGroupExampleInput" placeholder="Enter Your First Name" />
                       </div>
                       <div className="form-group mt-2">
                         <label for="formGroupExampleInput">Last Name</label>
-                        <input type="text" id="formGroupExampleInput2" placeholder="Another input" />
+                        <input type="text" id="formGroupExampleInput2" placeholder="Enter Your Last Name" />
                       </div>
                       <div className="form-group mt-2">
                         <label for="formGroupExampleInput">Email</label>
-                        <input type="email" id="formGroupExampleInput2" placeholder="Another input" />
+                        <input type="email" id="formGroupExampleInput2" placeholder="Enter Your Email" />
                       </div>
                       <div className="form-group mt-2">
                         <label for="formGroupExampleInput">Phone Number</label>
-                        <input type="number" id="formGroupExampleInput2" placeholder="Another input" />
+                        <input type="number" id="formGroupExampleInput2" placeholder="Enter Your Phone Number" />
                       </div>
                       <div className="form-group mt-2 mb-3">
                         <label for="formGroupExampleInput">Website</label>
-                        <input type="text" id="formGroupExampleInput2" placeholder="Another input" />
+                        <input type="text" id="formGroupExampleInput2" placeholder="Enter Your Website" />
                       </div>
                       <Buttons title={"Submit"} width={"100%"} />
                     </form>
@@ -190,8 +202,8 @@ const Home = () => {
                   })}
                 </div>
                 <div className={styles.btns}>
-                  <Buttons title={"Contact Us"} border={"1px solid black"} />
-                  <Buttons title={"Get A Qoute"} border={"1px solid black"} />
+                  <a href="tel:+798564312"><Buttons title={"Contact Us"} border={"1px solid black"} /></a>
+                  <Buttons title={"Get A Qoute"} border={"1px solid black"} onClick={openModal}/>
                 </div>
               </div>
             </div>
@@ -243,8 +255,8 @@ const Home = () => {
                 <p>All your digital marketing endeavors aim to be seen by your ideal customer. The Full-Service SEO from the industry gurus at Rank by Monday can help you attain higher rankings on various search engines. Our dedicated SEO marketing plan will drive more traffic to your site and enable your brand to outrank others. </p>
               </div>
               <div className={styles.btns}>
-                <Buttons title={"Call Now"} border={"1px solid black"} />
-                <Buttons title={"Get A Free Qoute"} border={"1px solid black"} />
+                <a href="tel:+798564312"><Buttons title={"Call Now"} border={"1px solid black"} /></a>
+                <Buttons title={"Get A Free Qoute"} border={"1px solid black"}  onClick={openModal}/>
               </div>
             </div>
           </div>
@@ -282,7 +294,6 @@ const Home = () => {
             <div className="col-lg-5 offset-md-1">
               <div className={styles.AccWrapper}>
                 {AccordianItem.map((item) => {
-                  console.log(item)
                   return (
                     <Accordian key={item.id} data={item} />)
                 })}
@@ -293,8 +304,9 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <Footer/>
+        <Footer />
       </section>
+      <ChatWidget/>
     </>
   )
 }

@@ -42,3 +42,27 @@
   width: 431px;
   height: 35vh;
 }
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 15px;
+  
+}
+
+body::-webkit-scrollbar-track {
+  transition: 0.5s;
+  background: black;
+
+}
+
+/* Style the scrollbar thumb after scrolling 500px */
+.scrolled::-webkit-scrollbar-thumb {
+  background: white;
+}
+.scrolled_2::-webkit-scrollbar-thumb {
+  background: red;
+}

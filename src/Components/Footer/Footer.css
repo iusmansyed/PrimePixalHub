@@ -32,7 +32,12 @@ footer {
     color: white;
     font-family: reg;
     font-size: 20px;
+    justify-content: center;
+    cursor: pointer;
 
+}
+.socail-content a{
+    color: white;
 }
 
 .socail-content ul li {

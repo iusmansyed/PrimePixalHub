@@ -9,24 +9,49 @@ import Contact from './Pages/Contact/Contact'
 import Services from './Pages/Services/Services'
 import { motion } from 'framer-motion'
 function App() {
-  const [count, setCount] = useState(0)
-  const [x, setX] = useState(0)
-  const [y, setY] = useState(0)
+    // const [count, setCount] = useState(0)
+    // const [scrolling, setScrolling] = useState(false)
+
+    // const [x, setX] = useState(0)
+    // const [y, setY] = useState(0)
+
+    // useEffect(() => {
+    //   const handleCursor = (e) => {
+    //     setX(e.clientX - 20)
+    //     setY(e.clientY - 15)
+    //   }
+    //   window.addEventListener("mousemove", handleCursor)
+    //   return () => {
+    //     window.removeEventListener("mousemove", handleCursor)
+
+    //   }
+    // }, [])
+
+  const [scrollClass, setScrollClass] = useState('');
 
   useEffect(() => {
-    const handleCursor = (e) => {
-      setX(e.clientX - 20)
-      setY(e.clientY - 15)
-    }
-    window.addEventListener("mousemove", handleCursor)
+    const handleScroll = () => {
+      if (window.scrollY >= 700 && window.scrollY < 4200) {
+        document.body.classList.add('scrolled');
+        document.body.classList.remove('scrolled_2');
+      } else if (window.scrollY >= 4200) {
+        document.body.classList.remove('scrolled');
+        document.body.classList.add('scrolled_2');
+      } else {
+        document.body.classList.remove('scrolled');
+        document.body.classList.remove('scrolled_2');
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
     return () => {
-      window.removeEventListener("mousemove", handleCursor)
-
-    }
-  }, [])
-
-  return (
-    <>
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+return (
+    <div className={`content ${scrollClass}`}>
       {/* <motion.div className='cursor-custom' animate={{
         x,
         y,
@@ -44,7 +69,7 @@ function App() {
 
       </Routes>
 
-    </>
+    </div>
   )
 }
 

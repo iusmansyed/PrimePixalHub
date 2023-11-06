@@ -1,7 +1,6 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
 const Accordian = ({ data }) => {
-    console.log(data)
     return (
         <Accordion defaultActiveKey="0" >
             <Accordion.Item eventKey="0">

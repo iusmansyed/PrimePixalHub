@@ -48,7 +48,7 @@ const TopNav = () => {
                         <li><NavLink to={"/contact"} style={navLinkStyle}>Contact</NavLink></li>
                         <li><NavLink to={"/services"} style={navLinkStyle}>Services</NavLink></li>
                         <li><NavLink to={"/pricing"} style={navLinkStyle}>Pricing</NavLink></li>
-                        <li><BiSolidPhoneCall style={{ color: scrolling ? "black" : "white", fontSize: "24px" }} /></li>
+                        <li><a href="tel:+798564312"><BiSolidPhoneCall style={{ color: scrolling ? "black" : "white", fontSize: "24px" }} /></a></li>
                         <li><BsFillChatRightTextFill style={{ color: scrolling ? "black" : "white", fontSize: "24px" }} /></li>
                     </ul>
                 </div>
