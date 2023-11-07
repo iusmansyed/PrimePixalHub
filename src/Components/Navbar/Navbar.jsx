@@ -3,6 +3,8 @@ import styles from "./navbar.module.css"
 import { NavLink } from 'react-router-dom'
 import { BiSolidPhoneCall } from 'react-icons/bi'
 import { BsFillChatRightTextFill } from 'react-icons/bs'
+import Buttons from '../Buttons/Buttons'
+import Logo from "../../assets/Images/logo.png"
 const TopNav = () => {
     const [scrolling, setScrolling] = useState(false)
     useEffect(() => {
@@ -29,7 +31,7 @@ const TopNav = () => {
     };
 
     const navbarStyle = {
-        backgroundColor: scrolling ? 'white' : 'transparent',
+        backgroundColor: scrolling ? 'white' : ' rgba(0, 0, 0, 0.452)',
         transition: '0.5s',
         position: 'fixed',
         width: '100%',
@@ -41,15 +43,16 @@ const TopNav = () => {
     return (
         <nav style={navbarStyle}>
             <div className={styles.header}>
-                <div className={styles.logo}><NavLink to={"/"} style={navLinkStyle2}>PRIMEPIXELHUB</NavLink></div>
+                <div className={styles.logo}><NavLink to={"/"} > <img src={Logo} alt="" width={"120px"}/> </NavLink></div>
                 <div className={styles.links}>
                     <ul>
                         <li><NavLink to={"/about"} style={navLinkStyle}>About</NavLink></li>
                         <li><NavLink to={"/contact"} style={navLinkStyle}>Contact</NavLink></li>
                         <li><NavLink to={"/services"} style={navLinkStyle}>Services</NavLink></li>
                         <li><NavLink to={"/pricing"} style={navLinkStyle}>Pricing</NavLink></li>
-                        <li><a href="tel:+798564312"><BiSolidPhoneCall style={{ color: scrolling ? "black" : "white", fontSize: "24px" }} /></a></li>
-                        <li><BsFillChatRightTextFill style={{ color: scrolling ? "black" : "white", fontSize: "24px" }} /></li>
+                        <li><a href="tel:+798564312"><BiSolidPhoneCall style={{ color: scrolling ? "black" : "red", fontSize: "24px" }} /></a></li>
+                        <li><BsFillChatRightTextFill style={{ color: scrolling ? "black" : "red", fontSize: "24px" }} /></li>
+                        <li><Buttons  title={"Get Started"} Color={"transparent"} textColor={ scrolling?"black": "white"} /></li>
                     </ul>
                 </div>
             </div>

@@ -15,9 +15,21 @@ import Accordian from '../../Components/Accordian/Accordian'
 import Footer from '../../Components/Footer/Footer'
 import ModalPop from '../../Components/Modal/ModalPop'
 import ChatWidget from '../../Components/TawkTo/TawkToConfig'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
-
+  const [data, setData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    number: '',
+    website: ''
+  })
+  const { firstName, lastName, email, number, website } = data
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value })
+  }
   const openModal = () => {
     setShowModal(true);
   };
@@ -122,6 +134,59 @@ const Home = () => {
       answer: 'JSX is a syntax extension for JavaScript, often used in React to describe what the UI should look like.',
     },
   ];
+  const handleFormSubmit = async (e) => {
+    e.preventDefault(); // Corrected "prevent" to "preventDefault"
+    if (firstName != '' && email != '' && number != '') {
+      try {
+        const res = await fetch('https://v1.nocodeapi.com/syedusman/google_sheets/zhEMyYBjMbGyUndL?tabId=Sheet1', {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json', // Corrected "content-Type" to "Content-Type"
+          },
+          body: JSON.stringify([[firstName, lastName, email, number, website, new Date().toLocaleString()]])
+        });
+        await res.json();
+        // Clear the form fields if needed
+        setData({ firstName: '', lastName: '', email: '', number: '', website: '' });
+        toast.success('Successfully Submitted', {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      } catch (error) {
+        console.log(error, "form error");
+      }
+    } else if (firstName == '' && email == '' && number == '') {
+      
+      toast.info('Kindly Fill Mandatory Fields', {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
+    }
+    else {
+      toast.error('Submission Failed', {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }
+  };
 
   return (
     <>
@@ -152,27 +217,28 @@ const Home = () => {
                   <div className={styles.formSec}>
                     <h1>Rank Higher</h1>
                     <h3>With SEO By PrimePixelHub</h3>
-                    <form>
+                    <form onSubmit={handleFormSubmit}>
                       <div className="form-group">
-                        <label for="formGroupExampleInput">First Name</label>
-                        <input type="text" id="formGroupExampleInput" placeholder="Enter Your First Name" />
+                        <label for="formGroupExampleInput"><span style={{ color: "red" }}>*</span>First Name</label>
+                        <input type="text" id="formGroupExampleInput" placeholder="*Enter Your First Name" name='firstName' value={firstName} onChange={handleChange} style={{borderColor:firstName == "" ? "red" :"" }} />
                       </div>
                       <div className="form-group mt-2">
                         <label for="formGroupExampleInput">Last Name</label>
-                        <input type="text" id="formGroupExampleInput2" placeholder="Enter Your Last Name" />
+                        <input type="text" id="formGroupExampleInput2" placeholder="Enter Your Last Name" name='lastName' value={lastName} onChange={handleChange} />
                       </div>
                       <div className="form-group mt-2">
-                        <label for="formGroupExampleInput">Email</label>
-                        <input type="email" id="formGroupExampleInput2" placeholder="Enter Your Email" />
+                        <label for="formGroupExampleInput"><span style={{ color: "red" }}>*</span>Email</label>
+                        <input type="email" id="formGroupExampleInput2" placeholder="*Enter Your Email" name='email' value={email} onChange={handleChange} />
                       </div>
                       <div className="form-group mt-2">
-                        <label for="formGroupExampleInput">Phone Number</label>
-                        <input type="number" id="formGroupExampleInput2" placeholder="Enter Your Phone Number" />
+                        <label for="formGroupExampleInput"><span style={{ color: "red" }}>*</span>Phone Number</label>
+                        <input type="number" id="formGroupExampleInput2" placeholder="*Enter Your Phone Number" name='number' value={number} onChange={handleChange} />
                       </div>
                       <div className="form-group mt-2 mb-3">
                         <label for="formGroupExampleInput">Website</label>
-                        <input type="text" id="formGroupExampleInput2" placeholder="Enter Your Website" />
+                        <input type="text" id="formGroupExampleInput2" placeholder="Enter Your Website" name='website' value={website} onChange={handleChange} />
                       </div>
+                      {/* <button type='submit'>submit</button> */}
                       <Buttons title={"Submit"} width={"100%"} />
                     </form>
                   </div>
@@ -203,7 +269,7 @@ const Home = () => {
                 </div>
                 <div className={styles.btns}>
                   <a href="tel:+798564312"><Buttons title={"Contact Us"} border={"1px solid black"} /></a>
-                  <Buttons title={"Get A Qoute"} border={"1px solid black"} onClick={openModal}/>
+                  <Buttons title={"Get A Qoute"} border={"1px solid black"} onClick={openModal} />
                 </div>
               </div>
             </div>
@@ -256,7 +322,7 @@ const Home = () => {
               </div>
               <div className={styles.btns}>
                 <a href="tel:+798564312"><Buttons title={"Call Now"} border={"1px solid black"} /></a>
-                <Buttons title={"Get A Free Qoute"} border={"1px solid black"}  onClick={openModal}/>
+                <Buttons title={"Get A Free Qoute"} border={"1px solid black"} onClick={openModal} />
               </div>
             </div>
           </div>
@@ -306,7 +372,19 @@ const Home = () => {
       <section>
         <Footer />
       </section>
-      <ChatWidget/>
+      <ChatWidget />
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </>
   )
 }

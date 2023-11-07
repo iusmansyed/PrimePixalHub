@@ -6,8 +6,6 @@
 .button-57 {
     position: relative;
     overflow: hidden;
-    border: 1px solid #18181a;
-    color: black;
     display: inline-block;
     font-size: 15px;
     line-height: 15px;
@@ -19,7 +17,13 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     font-family: reg;
+    border: 1px solid transparent;
+    border-image: linear-gradient(135deg, #FF155E, #FF996E);
+    border-image-slice: 1;
+    border-image-width: 2px;
+    border-image-outset: 0;
 }
+
 
 .button-57 span:first-child {
     position: relative;
@@ -48,8 +52,16 @@
     bottom: -120%;
     left: 0;
     width: 101%;
-    height: 200%;
-    background-color: red;
+    height: 100%;
+    background: hsla(18, 100%, 72%, 1);
+
+    background: linear-gradient(90deg, hsla(18, 100%, 72%, 1) 0%, hsla(325, 69%, 56%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(18, 100%, 72%, 1) 0%, hsla(325, 69%, 56%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(18, 100%, 72%, 1) 0%, hsla(325, 69%, 56%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF996E", endColorstr="#DC419B", GradientType=1);
     transform-origin: bottom center;
     transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
     transform: skewY(9.3deg) scaleY(0);
@@ -58,7 +70,7 @@
 
 .button-57:hover:after {
     transform-origin: bottom center;
-    transform: skewY(9.3deg) scaleY(2);
+    transform: skewY(9.3deg) scaleY(3);
 }
 
 .button-57:hover span:last-child {
