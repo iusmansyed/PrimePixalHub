@@ -1,3 +1,7 @@
+p{
+    line-height: 38.5px ;
+}
+
 @font-face {
     font-family: bold;
     src: url("../../assets/Fonts/Poppins-Bold.ttf");
@@ -13,15 +17,13 @@
     src: url("../../assets/Fonts/Poppins-Regular.ttf");
 }
 
-.home {
-    margin: 0 0 30px;
-}
+
 
 /* src/BannerVideo.css */
 .banner_video {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -44,6 +46,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
+    padding-top: 30px;
 }
 
 .bannerHeading h1 {
@@ -53,11 +56,7 @@
 }
 
 .bannerHeading h1 span {
-    background: linear-gradient(180deg, #FF155E, #FF996E);
-    -webkit-background-clip: text;
-    /* For Webkit-based browsers */
-    background-clip: text;
-    color: transparent;
+    color: red;
     display: block;
 }
 
@@ -68,6 +67,7 @@
 
 .bannerHeading p {
     font-family: reg;
+    line-height: 37.125px;
 }
 
 .btns {
@@ -113,6 +113,10 @@
     font-family: reg;
 }
 
+.formSec h3 span {
+    color: red;
+}
+
 form {
     padding: 10px 30px 0;
 }
@@ -147,14 +151,19 @@ label {
     padding: 10px 30px;
     font-family: reg;
     font-size: 15px;
+    margin: 30px 0;
+    line-height: normal;
+    letter-spacing: 1.5px;
 }
+
+
 
 .scrollSec::-webkit-scrollbar {
     width: 1px;
 }
 
 .scrollSec::-webkit-scrollbar-thumb {
-    background-color: black;
+    background-color: red;
 }
 
 .scrollSec::-webkit-scrollbar-thumb:hover {
@@ -166,16 +175,10 @@ label {
 }
 
 .seo_services {
-    background-image: url('../../assets/Images/services-bg.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 130px 0px;
 }
 
-.text_wrapper {
-    text-align: center;
-}
+
 
 .text_wrapper h1:nth-child(1) {
     font-family: bold;
@@ -220,12 +223,18 @@ label {
 }
 
 .SeoWrapper h1 {
-    font-family: SemiBold;
+    font-family: bold;
+    font-size: 50px;
+}
+
+.SeoWrapper h1 span {
+    color: red;
 }
 
 .SeoWrapper p {
     font-family: reg;
-    line-height: 30px;
+    line-height: 38.5px ;
+    
 }
 
 .questions {
@@ -235,8 +244,60 @@ label {
 .questions h1 {
     text-align: center;
     padding: 20px 0;
+    font-family: bold;
+}
+.questions h1 span{
+    color: red;
 }
 
 .AccWrapper {
     padding: 70px 0 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPPONSIVE  */
+
+
+@media (max-width:992px) {
+    .formSec{
+        display: none;
+    }
+}
+@media (max-width:534px) {
+    .bannerHeading h1{
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .bannerHeading p{
+        line-height: 30px;
+    }
+    .BusinessText h1{
+        font-size: 30px;
+      line-height: 50px;
+    }
+    .BusinessText p{
+        line-height: 30px;
+
+    }
+    .text_wrapper h1{
+        font-size: 30px;
+      line-height: 50px;
+    }
+    .SeoWrapper h1 {
+        font-size: 30px;
+      line-height: 50px;
+    }
+  }

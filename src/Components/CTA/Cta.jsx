@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from "./Cta.module.css"
 import Buttons from '../Buttons/Buttons'
-import Building from "../../assets/Images/building.gif"
+import Building from "../../assets/Images/building.png"
 import ModalPop from '../Modal/ModalPop'
 const Cta = () => {
     const [showModal, setShowModal] = useState(false);

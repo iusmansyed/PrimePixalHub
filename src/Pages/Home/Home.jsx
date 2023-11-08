@@ -9,6 +9,7 @@ import 'react-multi-carousel/lib/styles.css';
 import Cta from '../../Components/CTA/Cta';
 import animationData2 from '../../assets/Lottie/Animation 2.json';
 import animationData3 from '../../assets/Lottie/Animation 3.json';
+import animationData4 from '../../assets/Lottie/red-line';
 import HoverableCard from '../../Components/Cards/Cards'
 import { FaConnectdevelop } from "react-icons/fa"
 import Accordian from '../../Components/Accordian/Accordian'
@@ -19,6 +20,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
+  const [txtErr, setTxtErr] = useState(false);
   const [data, setData] = useState({
     firstName: '',
     lastName: '',
@@ -162,8 +164,10 @@ const Home = () => {
         console.log(error, "form error");
       }
     } else if (firstName == '' && email == '' && number == '') {
-      
-      toast.info('Kindly Fill Mandatory Fields', {
+
+      setTxtErr(true)
+      console.log(emp, 'in fuc');
+      toast.info(`Kindly Fill Mandatory Fields`, {
         position: "bottom-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -172,7 +176,8 @@ const Home = () => {
         draggable: true,
         progress: undefined,
         theme: "dark",
-        });
+      });
+      
     }
     else {
       toast.error('Submission Failed', {
@@ -186,6 +191,7 @@ const Home = () => {
         theme: "dark",
       });
     }
+
   };
 
   return (
@@ -206,8 +212,8 @@ const Home = () => {
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam unde, natus doloribus praesentium libero laudantium nesciunt ducimus laboriosam magni suscipit reiciendis sit sunt. Beatae optio asperiores dolorem eveniet reprehenderit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ullam unde, natus doloribus praesentium libero laudantium nesciunt ducimus laboriosam magni suscipit reiciendis sit sunt. Beatae optio asperiores dolorem eveniet reprehenderit!</p>
                     <div className={styles.btns}>
-                      <a href="tel:+798564312"><Buttons title={"Contact Us"} /></a>
-                      <Buttons title={"Get A Qoute"} onClick={openModal} />
+                      <a href="tel:+798564312"><Buttons title={"Contact Us"} border={'1px solid red'} /></a>
+                      <Buttons title={"Get A Qoute"} onClick={openModal} border={'1px solid red'} />
                     </div>
                   </div>
                 </div>
@@ -216,11 +222,11 @@ const Home = () => {
                   <ModalPop show={showModal} handleClose={closeModal} />
                   <div className={styles.formSec}>
                     <h1>Rank Higher</h1>
-                    <h3>With SEO By PrimePixelHub</h3>
+                    <h3>With SEO By <span>PrimePixelHub</span></h3>
                     <form onSubmit={handleFormSubmit}>
                       <div className="form-group">
                         <label for="formGroupExampleInput"><span style={{ color: "red" }}>*</span>First Name</label>
-                        <input type="text" id="formGroupExampleInput" placeholder="*Enter Your First Name" name='firstName' value={firstName} onChange={handleChange} style={{borderColor:firstName == "" ? "red" :"" }} />
+                        <input type="text" id="formGroupExampleInput" placeholder="*Enter Your First Name" name='firstName' value={firstName} onChange={handleChange} style={{ borderColor: txtErr ? "red" : "" }} />
                       </div>
                       <div className="form-group mt-2">
                         <label for="formGroupExampleInput">Last Name</label>
@@ -228,17 +234,16 @@ const Home = () => {
                       </div>
                       <div className="form-group mt-2">
                         <label for="formGroupExampleInput"><span style={{ color: "red" }}>*</span>Email</label>
-                        <input type="email" id="formGroupExampleInput2" placeholder="*Enter Your Email" name='email' value={email} onChange={handleChange} />
+                        <input type="email" id="formGroupExampleInput2" placeholder="*Enter Your Email" name='email' value={email} onChange={handleChange} style={{ borderColor: txtErr ? "red" : "" }} />
                       </div>
                       <div className="form-group mt-2">
                         <label for="formGroupExampleInput"><span style={{ color: "red" }}>*</span>Phone Number</label>
-                        <input type="number" id="formGroupExampleInput2" placeholder="*Enter Your Phone Number" name='number' value={number} onChange={handleChange} />
+                        <input type="number" id="formGroupExampleInput2" placeholder="*Enter Your Phone Number" name='number' value={number} onChange={handleChange} style={{ borderColor: txtErr ? "red" : "" }} />
                       </div>
                       <div className="form-group mt-2 mb-3">
                         <label for="formGroupExampleInput">Website</label>
                         <input type="text" id="formGroupExampleInput2" placeholder="Enter Your Website" name='website' value={website} onChange={handleChange} />
                       </div>
-                      {/* <button type='submit'>submit</button> */}
                       <Buttons title={"Submit"} width={"100%"} />
                     </form>
                   </div>
@@ -268,8 +273,8 @@ const Home = () => {
                   })}
                 </div>
                 <div className={styles.btns}>
-                  <a href="tel:+798564312"><Buttons title={"Contact Us"} border={"1px solid black"} /></a>
-                  <Buttons title={"Get A Qoute"} border={"1px solid black"} onClick={openModal} />
+                  <a href="tel:+798564312"><Buttons title={"Contact Us"} border={"1px solid red"} /></a>
+                  <Buttons title={"Get A Qoute"} border={"1px solid red"} onClick={openModal} />
                 </div>
               </div>
             </div>
@@ -286,14 +291,20 @@ const Home = () => {
       <section className={styles.seo_services}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-12">
+            <div className='col-lg-5'>
+              <Lottie
+                animationData={animationData4}
+                loop={true}
+                autoplay={true}
+              />
+            </div>
+            <div className="col-lg-7">
               <div className={styles.text_wrapper}>
                 <h1>Optimize Your Website to</h1>
                 <h1><span>Generate</span> <span>Qualified</span> <span>Leads</span></h1>
                 <h3>Boost Your Potential to Outrank Competitors in Search Today - The Best SEO Professionals are Just a Click Away. </h3>
                 <p>Did you know SEO marketing agency can give you 12.2x ROI on money spent? Why not make the most out of it while you can – let Rank by Monday take you ahead of the competition curve. We have a dedicated team of experts who can help you launch result-driven SEO campaigns. While you oversee other aspects of your business, you can always count on our team to increase your sales through smart local and off-page SEO tactics. In no time, you will experience a dramatic increase in your website traffic, lead generation, and brand awareness. </p>
               </div>
-              <h1 style={{ textAlign: "center" }}>Carousel will be added here </h1>
             </div>
           </div>
         </div>
@@ -309,20 +320,19 @@ const Home = () => {
                   animationData={animationData2}
                   loop={true}
                   autoplay={true}
-                  style={{ width: "800px" }}
                 />
               </div>
             </div>
             <div className="col-lg-6 offset-md-1">
               <div className={styles.SeoWrapper}>
-                <h1>Full Seo Service</h1>
+                <h1>Full <span>SEO</span> Service</h1>
                 <p>All your digital marketing endeavors aim to be seen by your ideal customer. The Full-Service SEO from the industry gurus at Rank by Monday can help you attain higher rankings on various search engines. Our dedicated SEO marketing plan will drive more traffic to your site and enable your brand to outrank others. </p>
                 <br />
                 <p>All your digital marketing endeavors aim to be seen by your ideal customer. The Full-Service SEO from the industry gurus at Rank by Monday can help you attain higher rankings on various search engines. Our dedicated SEO marketing plan will drive more traffic to your site and enable your brand to outrank others. </p>
               </div>
               <div className={styles.btns}>
-                <a href="tel:+798564312"><Buttons title={"Call Now"} border={"1px solid black"} /></a>
-                <Buttons title={"Get A Free Qoute"} border={"1px solid black"} onClick={openModal} />
+                <a href="tel:+798564312"><Buttons title={"Call Now"} border={"1px solid red"} /></a>
+                <Buttons title={"Get A Free Qoute"} border={"1px solid red"} onClick={openModal} />
               </div>
             </div>
           </div>
@@ -342,12 +352,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "30vh" }}>
-        <h1> Adding Carousel</h1>
-      </section>
+
       <section className={styles.questions}>
         <div className="container">
-          <h1>Most Frequently Asked Question</h1>
+          <h1>Most <span>Frequently</span> Asked Question</h1>
           <div className="row">
 
             <div className="col-lg-6">

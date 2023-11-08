@@ -5,6 +5,8 @@ import { BiSolidPhoneCall } from 'react-icons/bi'
 import { BsFillChatRightTextFill } from 'react-icons/bs'
 import Buttons from '../Buttons/Buttons'
 import Logo from "../../assets/Images/logo.png"
+import Logo2 from "../../assets/Images/logo-2.png"
+import { AiOutlineMenu } from 'react-icons/ai'
 const TopNav = () => {
     const [scrolling, setScrolling] = useState(false)
     useEffect(() => {
@@ -22,7 +24,7 @@ const TopNav = () => {
         )
     }, [])
     const navLinkStyle2 = {
-        color: scrolling ? "red" : 'white', // Change to the color you prefer
+        color: 'white', // Change to the color you prefer
         textDecoration: 'none',
     };
     const navLinkStyle = {
@@ -40,23 +42,44 @@ const TopNav = () => {
         zIndex: 1000,
         boxShadow: scrolling ? '5px 5px 10px rgba(0, 0, 0, 0.5)' : ""
     };
+    const [menu, setMenu] = useState(false)
     return (
-        <nav style={navbarStyle}>
-            <div className={styles.header}>
-                <div className={styles.logo}><NavLink to={"/"} > <img src={Logo} alt="" width={"120px"}/> </NavLink></div>
-                <div className={styles.links}>
-                    <ul>
-                        <li><NavLink to={"/about"} style={navLinkStyle}>About</NavLink></li>
-                        <li><NavLink to={"/contact"} style={navLinkStyle}>Contact</NavLink></li>
-                        <li><NavLink to={"/services"} style={navLinkStyle}>Services</NavLink></li>
-                        <li><NavLink to={"/pricing"} style={navLinkStyle}>Pricing</NavLink></li>
-                        <li><a href="tel:+798564312"><BiSolidPhoneCall style={{ color: scrolling ? "black" : "red", fontSize: "24px" }} /></a></li>
-                        <li><BsFillChatRightTextFill style={{ color: scrolling ? "black" : "red", fontSize: "24px" }} /></li>
-                        <li><Buttons  title={"Get Started"} Color={"transparent"} textColor={ scrolling?"black": "white"} /></li>
-                    </ul>
+        <>
+            <nav style={navbarStyle}>
+                <div className={styles.header}>
+                    <div className={styles.logo}><NavLink to={"/"} > {scrolling ? <img src={Logo2} alt="" width={"85px"} className={styles.logo2} /> : <img src={Logo} alt="" width={"100px"} className={styles.logo1} />} </NavLink></div>
+                    <div className={styles.links}>
+                        <ul>
+                            <li><NavLink to={"/about"} style={navLinkStyle}>About</NavLink></li>
+                            <li><NavLink to={"/contact"} style={navLinkStyle}>Contact</NavLink></li>
+                            <li><NavLink to={"/services"} style={navLinkStyle}>Services</NavLink></li>
+                            <li><NavLink to={"/pricing"} style={navLinkStyle}>Pricing</NavLink></li>
+                            <li><a href="tel:+798564312"><BiSolidPhoneCall style={{ color: scrolling ? "black" : "red", fontSize: "24px" }} /></a></li>
+                            <li><BsFillChatRightTextFill style={{ color: scrolling ? "black" : "red", fontSize: "24px" }} /></li>
+                            <li><Buttons title={"Get Started"} Color={"transparent"} textColor={scrolling ? "black" : "white"} /></li>
+                        </ul>
+                    </div>
+                    <div className={styles.links2}>
+                        <div className={styles.menu} onClick={() => setMenu(!menu)}>
+                            <AiOutlineMenu className='' style={{ color: 'white', fontSize: "25px",color:  "red" }} />
+                        </div>
+                        <div className={styles.menuLink} style={{ height: menu ? "60vh" : "0px", overflow: "hidden", opacity: menu ? 1 : 0, transition: "1s" }}>
+                            <ul>
+                                <li><NavLink to={"/about"} style={navLinkStyle2}>About</NavLink></li>
+                                <li><NavLink to={"/contact"} style={navLinkStyle2}>Contact</NavLink></li>
+                                <li><NavLink to={"/services"} style={navLinkStyle2}>Services</NavLink></li>
+                                <li><NavLink to={"/pricing"} style={navLinkStyle2}>Pricing</NavLink></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+            <nav style={navbarStyle}>
+                <div className={styles.header2}>
+
+                </div>
+            </nav>
+        </>
     )
 }
 
