@@ -1,5 +1,5 @@
-p{
-    line-height: 38.5px ;
+p {
+    line-height: 38.5px;
 }
 
 @font-face {
@@ -46,7 +46,7 @@ p{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 
 .bannerHeading h1 {
@@ -67,7 +67,7 @@ p{
 
 .bannerHeading p {
     font-family: reg;
-    line-height: 37.125px;
+    line-height: 32px;
 }
 
 .btns {
@@ -95,7 +95,7 @@ p{
 .formSec {
     border: 1px solid red;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 20px 10px;
+    padding: 20px 10px 30px;
     background-color: rgba(0, 0, 0, 0.575);
     border-radius: 12px;
 
@@ -144,7 +144,9 @@ label {
     color: black;
     font-size: 40px;
 }
-
+.BusinessText span{
+    color: red;
+}
 .scrollSec {
     height: 300px;
     overflow-y: scroll;
@@ -180,15 +182,14 @@ label {
 
 
 
-.text_wrapper h1:nth-child(1) {
+.text_wrapper h1 {
     font-family: bold;
     color: black;
     font-size: 50px;
 }
 
-.text_wrapper h1:nth-child(2) {
-    font-family: bold;
-    font-size: 50px;
+.text_wrapper h1 span {
+
     color: red;
 }
 
@@ -233,8 +234,12 @@ label {
 
 .SeoWrapper p {
     font-family: reg;
-    line-height: 38.5px ;
-    
+    line-height: 38.5px;
+
+}
+
+.SeoWrapper ul {
+    font-family: reg;
 }
 
 .questions {
@@ -246,7 +251,8 @@ label {
     padding: 20px 0;
     font-family: bold;
 }
-.questions h1 span{
+
+.questions h1 span {
     color: red;
 }
 
@@ -270,34 +276,88 @@ label {
 
 /* RESPPONSIVE  */
 
+@media (max-width:1024px) {
+ 
+    .bannerHeading h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .bannerHeading p {
+        /* line-height: 10px; */
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+}
 
 @media (max-width:992px) {
-    .formSec{
+    .formSec {
         display: none;
     }
 }
+
 @media (max-width:534px) {
-    .bannerHeading h1{
-      font-size: 40px;
-      line-height: 50px;
-    }
-    .bannerHeading p{
-        line-height: 30px;
-    }
-    .BusinessText h1{
+    .bannerHeading h1 {
         font-size: 30px;
-      line-height: 50px;
+        line-height: 50px;
     }
-    .BusinessText p{
+
+    .bannerHeading p {
+        line-height: 20px;
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+    .BusinessText h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .BusinessText p {
         line-height: 30px;
 
     }
-    .text_wrapper h1{
-        font-size: 30px;
-      line-height: 50px;
+
+    .text_wrapper h1 {
+        font-size: 20px;
+        line-height: 50px;
     }
+
     .SeoWrapper h1 {
-        font-size: 30px;
-      line-height: 50px;
+        font-size: 20px;
+        line-height: 50px;
     }
-  }
+}
+@media (max-width:320px) {
+    .bannerHeading h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .bannerHeading p {
+        line-height: 20px;
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+    .BusinessText h1 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .BusinessText p {
+        line-height: 30px;
+
+    }
+
+    .text_wrapper h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .SeoWrapper h1 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+}

@@ -46,3 +46,9 @@ font-family: SemiBold;
 .txt::-webkit-scrollbar-track {
     background-color: lightgray;
 }
+
+@media (max-width:1024px) {
+    .description h3{
+        font-size: 20px;
+    }
+}

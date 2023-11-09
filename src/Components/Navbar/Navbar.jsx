@@ -7,8 +7,12 @@ import Buttons from '../Buttons/Buttons'
 import Logo from "../../assets/Images/logo.png"
 import Logo2 from "../../assets/Images/logo-2.png"
 import { AiOutlineMenu } from 'react-icons/ai'
+import ModalPop from '../Modal/ModalPop'
 const TopNav = () => {
+    const [menu, setMenu] = useState(false)
     const [scrolling, setScrolling] = useState(false)
+    const [showModal, setShowModal] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 200) {
@@ -33,19 +37,28 @@ const TopNav = () => {
     };
 
     const navbarStyle = {
-        backgroundColor: scrolling ? 'white' : ' rgba(0, 0, 0, 0.452)',
+        backgroundColor: scrolling ? 'white' : 'rgba(0, 0, 0, 0.452)',
         transition: '0.5s',
         position: 'fixed',
         width: '100%',
         top: 0,
         left: 0,
         zIndex: 1000,
-        boxShadow: scrolling ? '5px 5px 10px rgba(0, 0, 0, 0.5)' : ""
+        boxShadow: scrolling ? '5px 5px 10px rgba(0, 0, 0, 0.5)' : 'none',
     };
-    const [menu, setMenu] = useState(false)
+
+    const openModal = () => {
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
+
     return (
         <>
-            <nav style={navbarStyle}>
+            <ModalPop show={showModal} handleClose={closeModal} />
+            <div style={navbarStyle} className={styles.mainDiv}>
                 <div className={styles.header}>
                     <div className={styles.logo}><NavLink to={"/"} > {scrolling ? <img src={Logo2} alt="" width={"85px"} className={styles.logo2} /> : <img src={Logo} alt="" width={"100px"} className={styles.logo1} />} </NavLink></div>
                     <div className={styles.links}>
@@ -56,12 +69,12 @@ const TopNav = () => {
                             <li><NavLink to={"/pricing"} style={navLinkStyle}>Pricing</NavLink></li>
                             <li><a href="tel:+798564312"><BiSolidPhoneCall style={{ color: scrolling ? "black" : "red", fontSize: "24px" }} /></a></li>
                             <li><BsFillChatRightTextFill style={{ color: scrolling ? "black" : "red", fontSize: "24px" }} /></li>
-                            <li><Buttons title={"Get Started"} Color={"transparent"} textColor={scrolling ? "black" : "white"} /></li>
+                            <li><Buttons title={"Get Started"} Color={"transparent"} textColor={scrolling ? "black" : "white"} onClick={openModal} /></li>
                         </ul>
                     </div>
                     <div className={styles.links2}>
                         <div className={styles.menu} onClick={() => setMenu(!menu)}>
-                            <AiOutlineMenu className='' style={{ color: 'white', fontSize: "25px",color:  "red" }} />
+                            <AiOutlineMenu className='' style={{ fontSize: "25px", color: "red" }} />
                         </div>
                         <div className={styles.menuLink} style={{ height: menu ? "60vh" : "0px", overflow: "hidden", opacity: menu ? 1 : 0, transition: "1s" }}>
                             <ul>
@@ -73,12 +86,8 @@ const TopNav = () => {
                         </div>
                     </div>
                 </div>
-            </nav>
-            <nav style={navbarStyle}>
-                <div className={styles.header2}>
+            </div>
 
-                </div>
-            </nav>
         </>
     )
 }

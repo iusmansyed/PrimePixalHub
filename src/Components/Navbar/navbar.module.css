@@ -55,7 +55,6 @@
 }
 
 .links ul li:hover {
-    cursor: pointer;
     border-bottom: 2px solid red;
 
     transform: scale(1.1);
@@ -75,7 +74,6 @@
     }
 
     .menu {
-        border: 1px solid red;
         padding: 10px;
         border-radius: 5px;
     }
@@ -117,6 +115,26 @@
         width: 80px;
     }
 
-    .logo1{ width: 80px;
+    .logo1 {
+        width: 80px;
+    }
+}
+
+@media (max-width:320px) {
+    .mainDiv {
+        width: 20%;
+    }
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .logo1 {
+        width: 85px;
+    }
+    
+    .logo2 {
+    width: 65px;
+
     }
 }

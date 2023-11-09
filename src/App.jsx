@@ -7,25 +7,9 @@ import Home from './Pages/Home/Home'
 import About from './Pages/About/About'
 import Contact from './Pages/Contact/Contact'
 import Services from './Pages/Services/Services'
-import { motion } from 'framer-motion'
+import AnimatedCursor from 'react-animated-cursor'
 function App() {
-    // const [count, setCount] = useState(0)
-    // const [scrolling, setScrolling] = useState(false)
 
-    // const [x, setX] = useState(0)
-    // const [y, setY] = useState(0)
-
-    // useEffect(() => {
-    //   const handleCursor = (e) => {
-    //     setX(e.clientX - 20)
-    //     setY(e.clientY - 15)
-    //   }
-    //   window.addEventListener("mousemove", handleCursor)
-    //   return () => {
-    //     window.removeEventListener("mousemove", handleCursor)
-
-    //   }
-    // }, [])
 
   const [scrollClass, setScrollClass] = useState('');
 
@@ -42,34 +26,25 @@ function App() {
         document.body.classList.remove('scrolled_2');
       }
     };
-  
+
     window.addEventListener('scroll', handleScroll);
-  
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
-return (
-    <div className={`content ${scrollClass}`}>
-      {/* <motion.div className='cursor-custom' animate={{
-        x,
-        y,
-      }}>
-        <motion.div className='cursor-custom2' animate={{
 
-        }}></motion.div>
-      </motion.div> */}
+  return (
+    <>
+ 
       <TopNav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
-
       </Routes>
-
-    </div>
+    </>
   )
 }
 

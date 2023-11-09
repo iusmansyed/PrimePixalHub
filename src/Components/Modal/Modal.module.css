@@ -24,6 +24,7 @@ color:  red;
 }
 input{
     font-family: reg;
+    border: 1px solid grey;
 }
 textarea{
     font-family: reg;

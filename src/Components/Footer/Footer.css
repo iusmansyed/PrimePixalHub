@@ -47,7 +47,6 @@ footer {
     font-family: reg;
     font-size: 20px;
     justify-content: center;
-    cursor: pointer;
 
 }
 
@@ -121,4 +120,22 @@ footer {
 
 .links p:hover {
     border-bottom: 1px solid red;
+}
+
+.address h1 {
+    color: white;
+    font-family: reg;
+}
+
+.address p {
+    font-family: reg;
+    color: #FFF;
+
+}
+
+.address a{
+    color: white;
+    text-decoration: none;
+    font-family: reg;
+    font-size: 20px;
 }

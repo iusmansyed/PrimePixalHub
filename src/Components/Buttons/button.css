@@ -11,8 +11,7 @@
     line-height: 15px;
     padding: 18px 18px 17px;
     text-decoration: none;
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.61);
+    background: white;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -21,7 +20,7 @@
     border-image-slice: 1;
     border-image-width: 2px;
     border-image-outset: 0;
-    color: white;
+    color: black;
 }
 
 
@@ -49,10 +48,10 @@
 .button-57:after {
     content: "";
     position: absolute;
-    bottom: -120%;
+    bottom: -210%;
     left: 0;
-    width: 101%;
-    height: 100%;
+    width: 120%;
+    height: 3000px;
     background: hsla(18, 100%, 72%, 1);
     background-color: red;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FF996E", endColorstr="#DC419B", GradientType=1);
