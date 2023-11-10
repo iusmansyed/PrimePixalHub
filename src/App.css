@@ -15,7 +15,7 @@
   cursor: alias;
   transform: translate(-50%, -50%);
   /* transition: transform 0.1s ease, background-color 0.1s ease, border-color 0.1s ease; */
-  z-index: 1111111111111;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,6 @@
   cursor: alias;
   transform: translate(-50%, -50%);
   /* transition: transform 0.1s ease, background-color 0.1s ease, border-color 0.1s ease; */
-  z-index: 1111111111111;
   left: 18px;
   top: 18px;
 }

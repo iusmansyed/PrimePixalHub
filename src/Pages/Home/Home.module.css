@@ -20,55 +20,15 @@ p {
 
 
 /* src/BannerVideo.css */
-.banner_video {
-    position: relative;
-    width: 100%;
-    height: 90vh;
-    overflow: hidden;
-}
 
-.Video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: rgba(0, 0, 0, 0.452);
-}
 
-.content {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding-top: 70px;
-}
 
-.bannerHeading h1 {
-    font-family: bold;
-    font-size: 3.5rem;
-    line-height: 80px;
-}
 
-.bannerHeading h1 span {
-    color: red;
-    display: block;
-}
 
-.bannerHeading h3 {
-    font-size: 28px;
-    font-family: SemiBold;
-}
 
-.bannerHeading p {
-    font-family: reg;
-    line-height: 32px;
-}
+
+
+
 
 .btns {
     display: flex;
@@ -92,48 +52,6 @@ p {
     padding: 5px 10px;
 }
 
-.formSec {
-    border: 1px solid red;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 20px 10px 30px;
-    background-color: rgba(0, 0, 0, 0.575);
-    border-radius: 12px;
-
-
-}
-
-.formSec h1 {
-    text-align: center;
-    font-family: SemiBold;
-    font-size: 50px;
-}
-
-.formSec h3 {
-    text-align: center;
-    font-family: reg;
-}
-
-.formSec h3 span {
-    color: red;
-}
-
-form {
-    padding: 10px 30px 0;
-}
-
-form input {
-    padding: 10px 10px;
-    background-color: transparent;
-    border: 1px solid white;
-    color: white;
-    font-family: reg;
-    border-radius: 5px;
-    width: 100%;
-}
-
-label {
-    font-family: reg;
-}
 
 .Business {
     padding: 50px 0 40px;
@@ -144,9 +62,11 @@ label {
     color: black;
     font-size: 40px;
 }
-.BusinessText span{
+
+.BusinessText span {
     color: red;
 }
+
 .scrollSec {
     height: 300px;
     overflow-y: scroll;
@@ -276,39 +196,12 @@ label {
 
 /* RESPPONSIVE  */
 
-@media (max-width:1024px) {
- 
-    .bannerHeading h1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
 
-    .bannerHeading p {
-        /* line-height: 10px; */
-        height: 300px;
-        overflow-y: scroll;
-    }
 
-}
 
-@media (max-width:992px) {
-    .formSec {
-        display: none;
-    }
-}
 
 @media (max-width:534px) {
-    .bannerHeading h1 {
-        font-size: 30px;
-        line-height: 50px;
-    }
-
-    .bannerHeading p {
-        line-height: 20px;
-        height: 300px;
-        overflow-y: scroll;
-    }
-
+    
     .BusinessText h1 {
         font-size: 30px;
         line-height: 50px;
@@ -329,17 +222,9 @@ label {
         line-height: 50px;
     }
 }
-@media (max-width:320px) {
-    .bannerHeading h1 {
-        font-size: 30px;
-        line-height: 50px;
-    }
 
-    .bannerHeading p {
-        line-height: 20px;
-        height: 300px;
-        overflow-y: scroll;
-    }
+@media (max-width:320px) {
+   
 
     .BusinessText h1 {
         font-size: 20px;

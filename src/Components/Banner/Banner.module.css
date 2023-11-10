@@ -1,0 +1,217 @@
+
+@font-face {
+    font-family: bold;
+    src: url("../../assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url("../../assets/Fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: reg;
+    src: url("../../assets/Fonts/Poppins-Regular.ttf");
+}
+
+
+
+.banner_video {
+    position: relative;
+
+
+    overflow: hidden;
+}
+
+.Video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.452);
+
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 120px 0;
+}
+
+.bannerHeading h1 {
+    font-family: bold;
+    font-size: 3.5rem;
+    line-height: 80px;
+}
+
+.bannerHeading h1 span {
+    color: red;
+    display: block;
+}
+
+.bannerHeading h3 {
+    font-size: 28px;
+    font-family: SemiBold;
+}
+
+.bannerHeading p {
+    font-family: reg;
+    line-height: 32px;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
+
+.btns {
+    padding-top: 20px;
+}
+
+.btns button {
+    border: none;
+    font-family: reg;
+}
+
+.formSec {
+    border: 1px solid red;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px 10px 30px;
+    background-color: rgba(0, 0, 0, 0.575);
+    border-radius: 12px;
+
+
+}
+
+.formSec h1 {
+    text-align: center;
+    font-family: SemiBold;
+    font-size: 50px;
+}
+
+.formSec h3 {
+    text-align: center;
+    font-family: reg;
+}
+
+.formSec h3 span {
+    color: red;
+}
+
+form {
+    padding: 10px 30px 0;
+}
+
+form input {
+    padding: 10px 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: reg;
+    border-radius: 5px;
+    width: 100%;
+}
+
+label {
+    font-family: reg;
+}
+
+.Dropdown {
+    padding: 20px 0;
+}
+
+.Dropdown select {
+    width: 100%;
+    border: 1px solid white;
+    padding: 10px 0;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    font-family: reg;
+    
+}
+.Dropdown select option{
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+@media (max-width:1024px) {
+
+    .bannerHeading h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .bannerHeading p {
+        /* line-height: 10px; */
+        height: 300px;
+        overflow-y: scroll;
+    }
+
+}
+
+@media (max-width:992px) {
+    .formSec {
+        display: none;
+    }
+}
+
+@media (max-width:534px) {
+    .bannerHeading h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .bannerHeading p {
+        line-height: 20px;
+        height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+@media (max-width:320px) {
+    .bannerHeading h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .bannerHeading p {
+        line-height: 20px;
+        height: 300px;
+        overflow-y: scroll;
+    }
+}

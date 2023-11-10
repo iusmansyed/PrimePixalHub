@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./Home.module.css"
-import Video from "../../assets/Images/bgVid.mp4"
+
 import Buttons from '../../Components/Buttons/Buttons'
 import Lottie from 'lottie-react';
 import animationData from '../../assets/Lottie/Animation - 1698968147822.json';
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Cta from '../../Components/CTA/Cta';
 import animationData2 from '../../assets/Lottie/Animation 2.json';
@@ -17,26 +16,14 @@ import { GiLinkedRings } from "react-icons/gi"
 import { TbBusinessplan } from "react-icons/tb"
 import Accordian from '../../Components/Accordian/Accordian'
 import Footer from '../../Components/Footer/Footer'
-import ModalPop from '../../Components/Modal/ModalPop'
 import ChatWidget from '../../Components/TawkTo/TawkToConfig'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import AnimatedCursor from 'react-animated-cursor';
 import { useLocation } from 'react-router-dom';
+import Banner from '../../Components/Banner/Banner';
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
-  const [txtErr, setTxtErr] = useState(false);
-  const [data, setData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    number: '',
-    website: ''
-  })
-  const { firstName, lastName, email, number, website } = data
-  const handleChange = (e) => {
-    setData({ ...data, [e.target.name]: e.target.value })
-  }
   const openModal = () => {
     setShowModal(true);
   };
@@ -126,160 +113,15 @@ const Home = () => {
       answer: 'It is a prompt on a website that urges users to do something specific, such as sign up for a newsletter, download a demo, or buy a product.',
     },
   ];
-  const handleFormSubmit = async (e) => {
-    e.preventDefault(); // Corrected "prevent" to "preventDefault"
-    if (firstName != '' && email != '' && number != '') {
-      try {
-        const res = await fetch('https://v1.nocodeapi.com/primepixelhub/google_sheets/vbBrehfJsVjddVLR?tabId=Sheet1', {
-          method: "POST",
-          headers: {
-            'Content-Type': 'application/json', // Corrected "content-Type" to "Content-Type"
-          },
-          body: JSON.stringify([[firstName, lastName, email, number, website, new Date().toLocaleString()]])
-        });
-        await res.json();
-        // Clear the form fields if needed
-        setData({ firstName: '', lastName: '', email: '', number: '', website: '' });
-        toast.success('Successfully Submitted', {
-          position: "bottom-center",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "dark",
-        });
-      } catch (error) {
-        console.log(error, "form error");
-      }
-    } else if (firstName == '' && email == '' && number == '') {
 
-      setTxtErr(true)
-      toast.info(`Kindly Fill Mandatory Fields`, {
-        position: "bottom-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-
-    }
-    else {
-      toast.error('Submission Failed', {
-        position: "bottom-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
-    }
-
-  };
   useEffect(() => {
     document.title = 'PrimePixelHub - Home';
   }, []);
 
   return (
     <>
-      {showModal ? '' :
-        <AnimatedCursor
-          innerSize={10}
-          outerSize={10}
-          outerAlpha={0.2}
-          color='169,169,169'
-          innerScale={0.7}
-          outerScale={5}
-          border={1}
-          outerStyle={{
-            zIndex: 1111111111111111111111111111111111111111111
-          }}
-          clickables={[
-            'a',
-            'input[type="text"]',
-            'input[type="email"]',
-            'input[type="number"]',
-            'input[type="submit"]',
-            'input[type="image"]',
-            'label[for]',
-            'select',
-            'textarea',
-            'button',
-            '.link',
-            {
-              target: '.custom',
-              options: {
-                innerSize: 12,
-                outerSize: 12,
-                outerAlpha: 0.3,
-                innerScale: 0.7,
-                outerScale: 5
-              }
-            }
-          ]}
-        />}
-      <section className={styles.home}>
-        <div className={styles.banner_video}>
-          <video className={styles.Video} autoPlay={true} loop={true} muted={true}>
-            <source src={Video} type="video/mp4" />
-
-          </video>
-          <div className={styles.content}>
-            <div className='container'>
-              <div className="row">
-                <div className="col-lg-7">
-                  <div className={styles.bannerHeading}>
-                    <h1>Elevate Your Brand with<span>Exceptional Design</span></h1>
-                    <h3>Crafting Visual Excellence to Propel Your Success</h3>
-                    <p>Welcome to Design Hub - the vibrant and visionary creative studio where we breathe life into your brand's dreams. Here, we don't just create visuals; we craft experiences that linger in the minds of your audience. At Design Hub, every pixel, every color, and every idea is not just carefully curated; they are meticulously woven into a tapestry of creativity to make your brand truly unforgettable. We don't see ourselves as mere designers; we are brand architects, and our mission is to shape the identity and narrative of your business in a way that resonates with your target audience. Our team of passionate creatives, strategists, and storytellers work in unison to understand the core of your brand. We believe that a brand is not just a logo or a product; it's an embodiment of your vision, values, and aspirations. We are here to bring that vision to life.</p>
-                    <div className={styles.btns}>
-                      <a href="tel:+798564312"><Buttons title={"Contact Us"} border={'1px solid red'} /></a>
-                      <Buttons title={"Get A Qoute"} onClick={openModal} border={'1px solid red'} />
-                    </div>
-                  </div>
-                </div>
-                <div className="col-lg-5 ">
-
-                  <ModalPop show={showModal} handleClose={closeModal} />
-                  <div className={styles.formSec}>
-                    <h1>Rank Higher</h1>
-                    <h3>With SEO By <span>PrimePixelHub</span></h3>
-                    <form onSubmit={handleFormSubmit}>
-                      <div className="form-group">
-                        <label for="formGroupExampleInput"><span style={{ color: "red" }}>*</span>First Name</label>
-                        <input type="text" id="formGroupExampleInput" placeholder="*Enter Your First Name" name='firstName' value={firstName} onChange={handleChange} style={{ borderColor: txtErr ? "red" : "" }} />
-                      </div>
-                      <div className="form-group mt-2">
-                        <label for="formGroupExampleInput">Last Name</label>
-                        <input type="text" id="formGroupExampleInput2" placeholder="Enter Your Last Name" name='lastName' value={lastName} onChange={handleChange} />
-                      </div>
-                      <div className="form-group mt-2">
-                        <label for="formGroupExampleInput"><span style={{ color: "red" }}>*</span>Email</label>
-                        <input type="email" id="formGroupExampleInput2" placeholder="*Enter Your Email" name='email' value={email} onChange={handleChange} style={{ borderColor: txtErr ? "red" : "" }} />
-                      </div>
-                      <div className="form-group mt-2">
-                        <label for="formGroupExampleInput"><span style={{ color: "red" }}>*</span>Phone Number</label>
-                        <input type="number" id="formGroupExampleInput2" placeholder="*Enter Your Phone Number" name='number' value={number} onChange={handleChange} style={{ borderColor: txtErr ? "red" : "" }} />
-                      </div>
-                      <div className="form-group mt-2 mb-3">
-                        <label for="formGroupExampleInput">Website</label>
-                        <input type="text" id="formGroupExampleInput2" placeholder="Enter Your Website" name='website' value={website} onChange={handleChange} />
-                      </div>
-                      <Buttons title={"Submit"} width={"100%"} />
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  
+      <Banner heading={"Elevate Your Brand with"} spanText={"Exceptional Design"} subHeading={"Crafting Visual Excellence to Propel Your Success"} para={"Welcome to Design Hub - the vibrant and visionary creative studio where we breathe life into your brand's dreams. Here, we don't just create visuals; we craft experiences that linger in the minds of your audience. At Design Hub, every pixel, every color, and every idea is not just carefully curated; they are meticulously woven into a tapestry of creativity to make your brand truly unforgettable. We don't see ourselves as mere designers; we are brand architects, and our mission is to shape the identity and narrative of your business in a way that resonates with your target audience. Our team of passionate creatives, strategists, and storytellers work in unison to understand the core of your brand. We believe that a brand is not just a logo or a product; it's an embodiment of your vision, values, and aspirations. We are here to bring that vision to life."} />
       <section className={styles.Business}>
         <div className="container">
           <div className="row">
@@ -411,7 +253,7 @@ const Home = () => {
       </section>
       <section>
         <Footer />
-      <ChatWidget />
+        <ChatWidget />
 
       </section>
       <ToastContainer

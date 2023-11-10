@@ -21,11 +21,11 @@ const Cta = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <h1>Dive into Animation Magic - Your Creative Journey Begins</h1>
-                                <h3>Welcome to the enthralling world of animation, where the possibilities are endless. We specialize in both 2D and 3D animation at our company, with each giving a distinct and engaging experience.</h3>
+                                <h1>Logos with Impact, <span>Websites</span> with Wow</h1>
+                                <h3>We breathe life into design. From eye-catching logos that embody your brand's essence to websites that leave a lasting digital footprint, we're your creative partners. Our passion lies in transforming ideas into visually stunning realities.</h3>
+                                <h4>– let's build something extraordinary together!</h4>
                                 <div className={styles.btns}>
-                                    <Buttons title={"Talk To An Expert"} />
-                                    <a href="tel:+798564312"><Buttons title={"+1 798 645 312"} /></a>
+                                <a href="tel:+798564312"><Buttons title={"Talk To An Expert"} /></a>
                                     <Buttons title={"Get A Free Quote"} onClick={openModal} />
                                 </div>
                             </div>

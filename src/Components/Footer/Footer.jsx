@@ -39,19 +39,23 @@ const Footer = () => {
                         </div>
                         <div className="col-lg-8">
                             <div className="row align-items-center">
-                                <div className="col-lg-4">
+                                <div className="col">
                                     <div className="address">
                                         <h1>Mailing Address</h1>
                                         <p> <TfiLocationPin style={{ fontSize: '25px' }} /> 5900 Balcones Drive STE 100 Austin TX 78731</p>
                                     </div>
                                     <div className="address">
                                         <h1>Email</h1>
-                                        <p> <a href="tel:+1 (888) 7777"><BsFillChatRightTextFill style={{ fontSize: '25px' }} />  Info@primepixelhub.com </a></p>
+                                        <p> <BsFillChatRightTextFill style={{ fontSize: '25px' }} />  Info@primepixelhub.com </p>
+                                    </div>
+                                    <div className="address">
+                                        <h1>Email</h1>
+                                        <p> <a href="tel:202-456-2121"><IoIosCall style={{ fontSize: '25px' }} />  202-456-2121 </a></p>
                                     </div>
                                 </div>
-                                <div className="col-lg-4">
+                                <div className="col">
                                     <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14483.629572031883!2d67.0735613!3d24.8328404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33da6535f5ef1%3A0xc79cddee409e1134!2sBlaze%20Interactives%20Private%20Limited!5e0!3m2!1sen!2s!4v1699562141888!5m2!1sen!2s"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.330227978854!2d-97.75752952379061!3d30.341563504431143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cae2f96fffff%3A0xeb7209fa2a453ee9!2s5900%20Balcones%20Dr%20Suite%20100%2C%20Austin%2C%20TX%2078731%2C%20USA!5e0!3m2!1sen!2s!4v1699658535305!5m2!1sen!2s"
                                         width="100%"
                                         height="450"
                                         style={{ border: '0' }}
