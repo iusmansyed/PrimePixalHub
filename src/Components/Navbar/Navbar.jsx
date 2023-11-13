@@ -6,7 +6,7 @@ import { BsFillChatRightTextFill } from 'react-icons/bs';
 import Buttons from '../Buttons/Buttons';
 import Logo from '../../assets/Images/logo.png';
 import Logo2 from '../../assets/Images/logo-2.png';
-import { AiFillCaretDown, AiOutlineMenu } from 'react-icons/ai';
+import { AiFillCaretDown, AiFillCaretUp, AiOutlineMenu } from 'react-icons/ai';
 import ModalPop from '../Modal/ModalPop';
 
 const TopNav = () => {
@@ -112,7 +112,7 @@ const TopNav = () => {
               >
                 <div className={styles.subLinks}>
                   <div  style={navLinkStyle}>
-                    Services <AiFillCaretDown />
+                    Services {dropdownVisible ?<AiFillCaretDown /> :<AiFillCaretUp />}
                   </div>
                   <ul style={dropdownStyle}>
                     <li>

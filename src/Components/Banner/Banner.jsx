@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styles from "./Banner.module.css"
-import Video from "../../assets/Images/bgVid.mp4"
+
 import ModalPop from '../../Components/Modal/ModalPop'
 import Buttons from '../Buttons/Buttons'
 import { Dropdown } from 'bootstrap'
@@ -93,27 +93,26 @@ const Banner = (props) => {
     <section className={styles.home}>
       <div className={styles.banner_video}>
         <video className={styles.Video} autoPlay={true} loop={true} muted={true}>
-          <source src={Video} type="video/mp4" />
+          <source src={props.video} type="video/mp4" />
 
         </video>
         <div className={styles.content}>
           <div className='container'>
             <div className="row">
-              <div className="col-lg-7">
+              <div className={props.columns}>
                 <div className={styles.bannerHeading}>
                   <h1>{props.heading}<span>{props.spanText}</span></h1>
                   <h3>{props.subHeading}</h3>
                   <p>{props.para}</p>
-                  <div className={styles.btns}>
+                  <div className={styles.btns} style={{display:props.btns}}>
                     <a href="tel:+798564312"><Buttons title={"Contact Us"} border={'1px solid red'} /></a>
                     <Buttons title={"Get A Qoute"} onClick={openModal} border={'1px solid red'} />
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5 ">
-
+              <div className="col-lg-5 " style={{ display: props.formDisplay }}>
                 <ModalPop show={showModal} handleClose={closeModal} />
-                <div className={styles.formSec}>
+                <div className={styles.formSec} >
                   <h1>Rank Higher</h1>
                   <h3>With SEO By <span>PrimePixelHub</span></h3>
                   <form onSubmit={handleFormSubmit}>

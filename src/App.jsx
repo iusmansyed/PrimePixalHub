@@ -10,6 +10,7 @@ import AnimatedCursor from 'react-animated-cursor'
 import Portfolio from './Pages/Portfolio/Portfolio'
 import Work from './Pages/Work/Work'
 import Packages from './Pages/Packages/Packages'
+import Footer from './Components/Footer/Footer'
 function App() {
 
 
@@ -80,6 +81,7 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="/packages" element={<Packages />} />
       </Routes>
+      <Footer/>
     </>
   )
 }
