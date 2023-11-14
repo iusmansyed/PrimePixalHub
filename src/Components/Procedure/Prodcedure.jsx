@@ -1,69 +1,83 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap-trial/ScrollTrigger ';
-import { ScrollSmoother } from 'gsap/src/ScrollSmoother';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import './Procedure.css';
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-const Prodcedure = () => {
-    const main = useRef();
-    const smoother = useRef();
-  
-    const scrollTo = () => {
-      smoother.current.scrollTo('.box-c', true, 'center center');
-    };
-  
-    useLayoutEffect(() => {
-      const ctx = gsap.context(() => {
-        // create the smooth scroller FIRST!
-        smoother.current = ScrollSmoother.create({
-          smooth: 2, // seconds it takes to "catch up" to native scroll position
-          effects: true, // look for data-speed and data-lag attributes on elements and animate accordingly
-        });
-        ScrollTrigger.create({
-          trigger: '.box-c',
-          pin: true,
-          start: 'center center',
-          end: '+=300',
-          markers: true,
-        });
-      }, main);
-      return () => ctx.revert();
-    }, []);
-  
+gsap.registerPlugin(ScrollTrigger);
+
+const Procedure = () => {
+  useEffect(() => {
+    const steps = gsap.utils.toArray('.step');
+
+    steps.forEach((step, index) => {
+      gsap.fromTo(
+        step,
+        {
+          opacity: 0,
+          y: 50,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          scrollTrigger: {
+            trigger: step,
+            start: 'top 80%', // Adjust the start position as needed
+            end: 'top 50%', // Adjust the end position as needed
+            scrub: true,
+          },
+        }
+      );
+    });
+  }, []);
+
+  const Steps = [
+    {
+      id: 1,
+      heading:"Lorem",
+      Text:"adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd"
+    },
+    {
+      id: 2,
+      heading:"Lorem",
+      Text:"adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd"
+    },
+    {
+      id: 3,
+      heading:"Lorem",
+      Text:"adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd"
+    },
+    {
+      id: 4,
+      heading:"Lorem",
+      Text:"adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd"
+    },
+  ];
+
   return (
-   <>
-    <div id="smooth-wrapper" ref={main}>
-    <div id="smooth-content">
-      <header className="header">
-        <h1 className="title">GreenSock ScrollSmoother on a React App</h1>
-        <button className="button" onClick={scrollTo}>
-          Jump to C
-        </button>
-      </header>
-      <div className="box box-a" data-speed="0.5">
-        a
-      </div>
-      <div className="box box-b" data-speed="0.8">
-        b
-      </div>
-      <div className="box box-c" data-speed="1.5">
-        c
-      </div>
-      <div className="line"></div>
+    <div>
+      <section className='procedure'>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="heading">
+                <h1>Our <span>Procedure</span></h1>
+              </div>
+            </div>
+            <div className="col-lg-12">
+              <div className="steps">
+                {Steps.map((step, index) => (
+                  <div key={index} className="step">
+                    <h1>{step.heading}</h1>
+                    <p>{step.Text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
-  <footer>
-    <a href="https://greensock.com/scrollsmoother">
-      <img
-        className="greensock-icon"
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/scroll-smoother-logo-light.svg"
-        width="220"
-        height="70"
-      />
-    </a>
-  </footer>
-   </>
-  )
-}
+  );
+};
 
-export default Prodcedure
+export default Procedure;

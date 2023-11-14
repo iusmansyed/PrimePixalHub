@@ -47,24 +47,20 @@
     display: block;
   }
   .F {
-    background: lightgray;
     border-radius: 3%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
   }
   .l {
-    background: black;
     border-radius: 3%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
   }
   .i {
-     background: white;
     border-radius: 3%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
   }
   .p {
-    background: grey;
     border-radius: 3%;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
   }
   .container.plain .letter {
     background: transparent;

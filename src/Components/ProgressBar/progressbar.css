@@ -1,0 +1,50 @@
+@font-face {
+    font-family: bold;
+    src: url("../../assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url("../../assets/Fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: reg;
+    src: url("../../assets/Fonts/Poppins-Regular.ttf");
+}
+.progressBars {
+    background-color: rgba(32, 32, 32, 0.795);
+    color: white;
+    margin: 20px 0;
+    padding: 20px 0;
+    font-family: reg;
+
+}
+.boxes p {
+    position: relative;
+    margin-bottom: 0;
+}
+.boxes p:nth-child(1):before{
+    content: '';
+    padding: 10px 10px;
+    background-color: red;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+}
+.boxes p:nth-child(2):before{
+    content: '';
+    padding: 10px 10px;
+    background-color:#FF3838;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+}
+.boxes p:nth-child(3):before{
+    content: '';
+    padding: 10px 10px;
+    background-color:#FF7272;
+    position: absolute;
+    left: -30px;
+    top: 10px;
+}

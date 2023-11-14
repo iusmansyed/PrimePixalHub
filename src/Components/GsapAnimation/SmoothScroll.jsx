@@ -2,7 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { Flip } from 'gsap/all';
 import "./scroll.css"
-import Logo from "../../assets/Images/logo-2.png"
+import Logo1 from "../../assets/Images/LogoA.jpg"
+import Logo2 from "../../assets/Images/LogoB.png"
+import Logo3 from "../../assets/Images/LogoC.png"
+import Logo4 from "../../assets/Images/LogoD.png"
 const SmoothScroll = () => {
   gsap.registerPlugin(Flip);
 
@@ -41,10 +44,10 @@ const SmoothScroll = () => {
   return (
       <div className="wrapper">
         <div className="container final" ref={containerRef}>
-          <div class="letter F"><img src={Logo} alt="" width={"60%"} /></div>
-          <div class="letter l"><img src={Logo} alt="" width={"60%"}/></div>
-          <div class="letter i"><img src={Logo} alt="" width={"60%"}/></div>
-          <div class="letter p"><img src={Logo} alt="" width={"60%"}/></div>
+          <div class="letter F"><img src={Logo1} alt="" width={"60%"} /></div>
+          <div class="letter l"><img src={Logo2} alt="" width={"60%"}/></div>
+          <div class="letter i"><img src={Logo3} alt="" width={"60%"}/></div>
+          <div class="letter p"><img src={Logo4} alt="" width={"60%"}/></div>
           <div class="for">from</div>
           <div class="gsap">PRIMEPIXELHUB</div>
         </div>

@@ -60,7 +60,7 @@ const Home = () => {
     {
       id: 1,
       icon: <BiBookContent />,
-      title: "Content Creation",
+      title: "Content Creation Journey",
       Description: "We focus on the development and dissemination of compelling and valuable content across various social media platforms. It encompasses activities such as strategizing, generating content, and overseeing its distribution to captivate and interact with your specific audience."
     },
     {
@@ -229,10 +229,12 @@ const Home = () => {
       </section>
 
       <section className={styles.questions}>
-        <div className="container">
+<div className="col-lg-12">
           <h1>Most <span>Frequently</span> Asked Question</h1>
+  </div>         
+        <div className="container">
+         
           <div className="row">
-
             <div className="col-lg-6">
               <Lottie
                 animationData={animationData3}
