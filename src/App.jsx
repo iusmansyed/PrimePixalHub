@@ -4,13 +4,13 @@ import './App.css'
 import TopNav from './Components/Navbar/Navbar'
 import { Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
-import About from './Pages/About/About'
 import Contact from './Pages/Contact/Contact'
 import AnimatedCursor from 'react-animated-cursor'
 import Portfolio from './Pages/Portfolio/Portfolio'
 import Work from './Pages/Work/Work'
 import Packages from './Pages/Packages/Packages'
 import Footer from './Components/Footer/Footer'
+import WebsiteDesignDevelop from './Pages/WebsiteDesignDevelop/WebsiteDesignDevelop'
 function App() {
 
 
@@ -75,11 +75,11 @@ function App() {
       <TopNav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/work" element={<Work />} />
         <Route path="/packages" element={<Packages />} />
+        <Route path="/WebsiteDesignDevelop" element={<WebsiteDesignDevelop />} />
       </Routes>
       <Footer/>
     </>

@@ -116,32 +116,32 @@ const TopNav = () => {
                   </div>
                   <ul style={dropdownStyle}>
                     <li>
-                      <NavLink to="/service1" style={navLinkStyle3}>
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
                         Website Designing & Development
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/service2" style={navLinkStyle3}>
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
                         Logo Designing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/service2" style={navLinkStyle3}>
-                        Animation 2D, 3D
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      2D/3D Animation
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/service2" style={navLinkStyle3}>
-                        Social Media Management & Marketing
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                        Social Media Marketing & Management 
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/service2" style={navLinkStyle3}>
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
                         SEO Writing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/service2" style={navLinkStyle3}>
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
                         Digital Marketing
                       </NavLink>
                     </li>
@@ -203,32 +203,32 @@ const TopNav = () => {
               </li>
               <ul style={dropdownStyle2}>
                     <li>
-                      <NavLink to="/service1" style={navLinkStyle3}>
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
                         Website Designing & Development
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/service2" style={navLinkStyle3}>
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
                         Logo Designing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/service2" style={navLinkStyle3}>
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
                         Animation 2D, 3D
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/service2" style={navLinkStyle3}>
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
                         Social Media Management & Marketing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/service2" style={navLinkStyle3}>
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
                         SEO Writing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/service2" style={navLinkStyle3}>
+                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
                         Digital Marketing
                       </NavLink>
                     </li>
