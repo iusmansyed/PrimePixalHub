@@ -121,27 +121,27 @@ const TopNav = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      <NavLink to="/LogoDesigns" style={navLinkStyle3}>
                         Logo Designing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      <NavLink to="/Animation" style={navLinkStyle3}>
                       2D/3D Animation
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      <NavLink to="/SocialMedia" style={navLinkStyle3}>
                         Social Media Marketing & Management 
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      <NavLink to="/SeoWriting" style={navLinkStyle3}>
                         SEO Writing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      <NavLink to="/DigitalMarketing" style={navLinkStyle3}>
                         Digital Marketing
                       </NavLink>
                     </li>

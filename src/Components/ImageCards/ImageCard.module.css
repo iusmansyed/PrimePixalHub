@@ -1,0 +1,15 @@
+@font-face {
+    font-family: bold;
+    src: url("../../assets/Fonts/Poppins-Bold.ttf");
+}
+
+.ImagesCard {
+    padding: 50px 0;
+}
+
+.ImagesCard h1 {
+    text-align: center;
+    padding: 30px 0;
+    font-family: bold;
+    color: black;
+}

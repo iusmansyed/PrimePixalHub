@@ -23,6 +23,7 @@ import AnimatedCursor from 'react-animated-cursor';
 import { useLocation } from 'react-router-dom';
 import Banner from '../../Components/Banner/Banner';
 import Video from "../../assets/Images/bgVid.mp4"
+import BgImg from '../../assets/Images/building.jpg'
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
   const openModal = () => {
@@ -178,7 +179,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Cta />
+      <Cta heading={'Logos with Impact, Websites'} backgroundImage={BgImg} spanHeading={'with Wow'} subHeading={"We breathe life into design. From eye-catching logos that embody your brand's essence to websites that leave a lasting digital footprint, we're your creative partners. Our passion lies in transforming ideas into visually stunning realities."} text={"– let's build something extraordinary together!"}/>
       <section className={styles.seos}>
         <div className="container">
           <div className="row">

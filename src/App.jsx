@@ -11,6 +11,11 @@ import Work from './Pages/Work/Work'
 import Packages from './Pages/Packages/Packages'
 import Footer from './Components/Footer/Footer'
 import WebsiteDesignDevelop from './Pages/WebsiteDesignDevelop/WebsiteDesignDevelop'
+import LogoDesigns from './Pages/LogoDesign/LogoDesigns'
+import Animation from './Pages/Animation/Animation'
+import SocialMedia from './Pages/SocialMedia/SocialMedia'
+import SeoWriting from './Pages/SeoWriting/SeoWriting'
+import DigitalMarketing from './Pages/DigitalMarketing/DigitalMarketing'
 function App() {
 
 
@@ -80,6 +85,11 @@ function App() {
         <Route path="/work" element={<Work />} />
         <Route path="/packages" element={<Packages />} />
         <Route path="/WebsiteDesignDevelop" element={<WebsiteDesignDevelop />} />
+        <Route path="/LogoDesigns" element={<LogoDesigns />} />
+        <Route path="/Animation" element={<Animation />} />
+        <Route path="/SocialMedia" element={<SocialMedia />} />
+        <Route path="/SeoWriting" element={<SeoWriting />} />
+        <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
       </Routes>
       <Footer/>
     </>

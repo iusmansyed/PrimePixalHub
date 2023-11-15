@@ -9,9 +9,9 @@ const ProgressBar = ({ percentage }) => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-4">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fugit aspernatur, minima quia inventore dignissimos quos in, ea natus architecto dolorem eum quas saepe reprehenderit, atque laboriosam quibusdam velit quae.
+                        We are the only place you need to go for a full range of digital services. From fascinating website and logo designs that define your brand identity to expertly selected social media marketing and management strategies that nurture engagement, and cutting-edge digital marketing solutions, we seamlessly blend creativity and strategy to elevate your online presence. Count on us to be your partners on the digital journey, where each campaign, click, and design is carefully thought out to make sure your brand not only survives but flourishes in the ever-changing digital space.
                         </div>
-                        <div className="col-lg-6 d-flex align-items-center justify-content-center">
+                        <div className="col-lg-5 d-flex align-items-center justify-content-center">
                             <div className="bars" style={{ width: '400px' }}>
                                 <CircularProgressbarWithChildren
                                     value={75}
@@ -43,12 +43,12 @@ const ProgressBar = ({ percentage }) => {
                                 </CircularProgressbarWithChildren>
                             </div>
                         </div>
-                        <div className="col-lg-2">
+                        <div className="col-lg-3">
                             <div className='boxes'>
                                 {/* Content for the second column */}
-                               <p>2D/3D Animation</p>
-                               <p>Web Developement</p>
-                               <p>App Development</p>
+                               <p>Website and logo designing</p>
+                               <p>Social media marketing and management</p>
+                               <p>Digital marketing</p>
                             </div>
                         </div>
                     </div>

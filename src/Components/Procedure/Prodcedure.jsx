@@ -33,23 +33,23 @@ const Procedure = () => {
   const Steps = [
     {
       id: 1,
-      heading:"Lorem",
-      Text:"adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd"
+      heading:"Brand Essence",
+      Text:"The core of a brand serves as its soul, ensuring that it appears genuine and constant. This involves distilling your core values, identifying the personality that defines your aspirations for the future. We collaborate to create a story that goes beyond products or services, tapping into the emotional connection you have with your customers."
     },
     {
       id: 2,
-      heading:"Lorem",
-      Text:"adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd"
+      heading:"Visual",
+      Text:"We furnish Visual presentation innovation. A visually appealing design not only draws attention but also encourages exploration. Stay ahead of trends and surprise our audience with a website that not only meets expectations but exceeds them."
     },
     {
       id: 3,
-      heading:"Lorem",
-      Text:"adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd"
+      heading:"Optimization",
+      Text:"A responsive website is no longer a luxury, it is a requirement. Optimization is a conversion booster in addition to attracting visitors. We enhance your logo to its most basic components, guaranteeing recognition and clarity right away."
     },
     {
       id: 4,
-      heading:"Lorem",
-      Text:"adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd adshfshdfaoshf ohaosdhfodsh hdsuofha uhdsiahfosd osdhafohdsaofhd"
+      heading:"Fulfillment",
+      Text:"With focus on every detail, we ensure that your logo stands as a beacon of distinction, ready to represent your brand with clarity, effect, and enduring style. It's more than just a mark on the surface, it's a powerful communicator that creates a lasting emotional bond."
     },
   ];
 
