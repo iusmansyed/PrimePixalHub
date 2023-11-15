@@ -1,0 +1,141 @@
+@font-face {
+    font-family: bold;
+    src: url("../../assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: reg;
+    src: url("../../assets/Fonts/Poppins-Regular.ttf");
+}
+
+footer {
+    /* height: 30vh; */
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-details p {
+    color: #FFF;
+    font-family: reg;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    /* text-align: center; */
+}
+
+.footer-heading h1 {
+    color: white;
+    font-family: bold;
+    transition: 0.5s;
+}
+
+.footer-heading h1:hover {
+    text-shadow: 0 0 10px red;
+}
+
+.socail-content ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-family: reg;
+    font-size: 20px;
+    justify-content: center;
+
+}
+
+.socail-content a {
+    color: white;
+}
+
+.socail-content ul li {
+    padding: 30px 0;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.socail-content ul li:hover {
+    border-top: 1px solid red;
+    border-bottom: 1px solid white;
+}
+
+.socail-content-01 {
+    margin: 0;
+    padding: 0;
+}
+
+.socail-content-01 ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-family: reg;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.socail-content-01 a {
+    color: white;
+}
+
+.socail-content-01 ul li {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+    border: 1px solid white;
+    padding: 15px 18px;
+    border-radius: 50%;
+}
+
+.socail-content-01 ul li:hover {
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px red;
+}
+
+
+
+.links h1 {
+    font-size: 35px;
+    padding: 0 0 30px;
+}
+
+.links p {
+    list-style: none;
+    color: #FFF;
+    font-family: reg;
+    Line-height: 37.5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    width: min-content;
+    border: 1px solid transparent;
+}
+
+.links p:hover {
+    border-bottom: 1px solid red;
+}
+
+.address h1 {
+    color: white;
+    font-family: reg;
+}
+
+.address p {
+    font-family: reg;
+    color: #FFF;
+
+}
+
+.address a{
+    color: white;
+    text-decoration: none;
+    font-family: reg;
+    font-size: 20px;
+}

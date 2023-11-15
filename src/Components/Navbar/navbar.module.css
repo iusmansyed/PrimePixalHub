@@ -1,0 +1,156 @@
+@font-face {
+    font-family: bold;
+    src: url(../../assets/Fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url(../../assets/Fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: reg;
+    src: url(../../assets/Fonts/Poppins-Regular.ttf);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.logo {
+    font-family: bold;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-family: reg;
+    color: white;
+    align-items: center;
+}
+
+.links ul li {
+    transition: 0.5s;
+    height: max-content;
+    padding: 10px 10px;
+    border-bottom: 2px solid transparent;
+    color: white;
+    text-decoration: none;
+}
+
+.links ul li:nth-child(7) {
+    border: none;
+}
+
+.links ul li:nth-child(7):hover {
+    border: none;
+    transform: scale(1);
+
+}
+
+.links ul li:hover {
+    border-bottom: 2px solid red;
+
+    transform: scale(1.1);
+}
+
+.links2 {
+    display: none;
+}
+
+.subLinks ul li {
+    border-bottom: 1px solid red;
+}
+
+.subLinks ul li:hover {
+    border-bottom: 1px solid red;
+    cursor: pointer;
+    transform: none;
+
+}
+
+@media (max-width:786px) {
+    .links {
+        display: none;
+    }
+
+    .links2 {
+        display: block;
+        overflow-x: scroll;
+        border: 1px solid red;
+    }
+
+    .menu {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .menuLink {
+        padding: 20px 0;
+        position: fixed;
+        background-color: black;
+        z-index: -1;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .menuLink ul {
+        list-style: none;
+        margin-top: 90px;
+
+    }
+
+    .menuLink ul li {
+        padding: 20px 0;
+        border-bottom: 1px solid red;
+        width: 100%;
+        transition: 0.5s;
+        font-family: reg;
+        font-size: 20px;
+        color: white;
+    }
+
+
+    .menuLink ul li:hover {
+        background-color: red;
+        color: white;
+    }
+
+    .logo2 {
+        width: 80px;
+    }
+
+    .logo1 {
+        width: 80px;
+    }
+}
+
+@media (max-width:320px) {
+    .mainDiv {
+        width: 20%;
+    }
+
+    .header {
+        padding: 0 15px;
+    }
+
+    .logo1 {
+        width: 85px;
+    }
+
+    .logo2 {
+        width: 65px;
+
+    }
+    /* .menuLink ul {
+        height: 1000px;
+        overflow-x: scroll;
+    } */
+}

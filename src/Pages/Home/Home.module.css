@@ -1,0 +1,248 @@
+p {
+    line-height: 38.5px;
+}
+
+@font-face {
+    font-family: bold;
+    src: url("../../assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url("../../assets/Fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: reg;
+    src: url("../../assets/Fonts/Poppins-Regular.ttf");
+}
+
+
+
+/* src/BannerVideo.css */
+
+
+
+
+
+
+
+
+
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
+
+.btns {
+    padding-top: 20px;
+}
+
+.btns button {
+    border: none;
+    font-family: reg;
+}
+
+.btn1 {
+    padding: 5px 10px;
+}
+
+.btn2 {
+    padding: 5px 10px;
+}
+
+
+.Business {
+    padding: 50px 0 40px;
+}
+
+.BusinessText h1 {
+    font-family: bold;
+    color: black;
+    font-size: 40px;
+}
+
+.BusinessText span {
+    color: red;
+}
+
+.scrollSec {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px 30px;
+    font-family: reg;
+    font-size: 15px;
+    margin: 30px 0;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+
+
+.scrollSec::-webkit-scrollbar {
+    width: 1px;
+}
+
+.scrollSec::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+.scrollSec::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+}
+
+.scrollSec::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+.seo_services {
+    padding: 130px 0px;
+}
+
+
+
+.text_wrapper h1 {
+    font-family: bold;
+    color: black;
+    font-size: 50px;
+}
+
+.text_wrapper h1 span {
+
+    color: red;
+}
+
+.text_wrapper h3 {
+    color: black;
+    font-family: reg;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.text_wrapper p {
+    font-family: reg;
+}
+
+.carousel {
+    height: 30vh;
+    border: 1px solid red;
+
+}
+
+.custom_Carousel {
+    border: 1px solid red;
+    height: 100px;
+}
+
+.seos {
+    padding: 70px 0;
+}
+
+.SeoWrapper {
+    padding-top: 70px;
+}
+
+.SeoWrapper h1 {
+    font-family: bold;
+    font-size: 50px;
+}
+
+.SeoWrapper h1 span {
+    color: red;
+}
+
+.SeoWrapper p {
+    font-family: reg;
+    line-height: 38.5px;
+
+}
+
+.SeoWrapper ul {
+    font-family: reg;
+}
+
+.questions {
+    padding: 50px 0;
+}
+
+.questions h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-family: bold;
+}
+
+.questions h1 span {
+    color: red;
+}
+
+.AccWrapper {
+    padding: 70px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPPONSIVE  */
+
+
+
+
+
+@media (max-width:534px) {
+    
+    .BusinessText h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .BusinessText p {
+        line-height: 30px;
+
+    }
+
+    .text_wrapper h1 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .SeoWrapper h1 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width:320px) {
+   
+
+    .BusinessText h1 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .BusinessText p {
+        line-height: 30px;
+
+    }
+
+    .text_wrapper h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .SeoWrapper h1 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+}

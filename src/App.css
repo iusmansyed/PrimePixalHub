@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.cursor-custom {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 0, 0, 0.712);
+  border-radius: 50%;
+  background-color: transparent;
+  pointer-events: none;
+  cursor: alias;
+  transform: translate(-50%, -50%);
+  /* transition: transform 0.1s ease, background-color 0.1s ease, border-color 0.1s ease; */
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cursor-custom2 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgba(255, 0, 0, 0.712);
+  border-radius: 50%;
+  background-color: black;
+  pointer-events: none;
+  cursor: alias;
+  transform: translate(-50%, -50%);
+  /* transition: transform 0.1s ease, background-color 0.1s ease, border-color 0.1s ease; */
+  left: 18px;
+  top: 18px;
+}
+
+.react-multi-carousel-track ul li {
+  flex: 1 1 auto;
+  position: relative;
+  width: 431px;
+  height: 35vh;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 15px;
+  
+}
+
+body::-webkit-scrollbar-track {
+  transition: 0.5s;
+  background: black;
+
+}
+
+/* Style the scrollbar thumb after scrolling 500px */
+.scrolled::-webkit-scrollbar-thumb {
+  background: white;
+}
+.scrolled_2::-webkit-scrollbar-thumb {
+  background: red;
+}
+@media (max-width:534px) {
+  h3{
+    font-size: 20px;
+  }
+}

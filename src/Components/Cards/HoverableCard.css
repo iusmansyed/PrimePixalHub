@@ -1,0 +1,54 @@
+@font-face {
+    font-family: bold;
+    src: url("../../assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url("../../assets/Fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: reg;
+    src: url("../../assets/Fonts/Poppins-Regular.ttf");
+}
+.card-container {
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: #F5F8FA;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.card-container:hover{
+background-color: red;
+color: white;
+}
+.description h3{
+font-family: SemiBold;
+}
+.txt{
+    height: 200px;
+    overflow-y: scroll;
+    font-family: reg;
+}
+.txt::-webkit-scrollbar {
+    width: 1px;
+}
+
+.txt::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.txt::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+}
+
+.txt::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+@media (max-width:1024px) {
+    .description h3{
+        font-size: 20px;
+    }
+}

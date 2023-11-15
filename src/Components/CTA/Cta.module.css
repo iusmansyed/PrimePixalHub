@@ -1,0 +1,60 @@
+@font-face {
+    font-family: bold;
+    src: url("../../assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url("../../assets/Fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: reg;
+    src: url("../../assets/Fonts/Poppins-Regular.ttf");
+}
+
+
+
+.gif_container {
+    background-image: url("../../assets/Images/building.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+
+.content {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.content h1 {
+    font-family: bold;
+}
+
+.content span {
+    color: red;
+}
+
+.content h3 {
+    font-family: SemiBold;
+    padding: 20px 0;
+}
+
+.content h4 {
+    font-family: reg;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    gap: 20px;
+}
