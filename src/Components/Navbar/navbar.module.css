@@ -70,7 +70,6 @@
 
 .subLinks ul li:hover {
     border-bottom: 1px solid red;
-    cursor: pointer;
     transform: none;
 
 }

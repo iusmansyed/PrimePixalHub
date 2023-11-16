@@ -9,7 +9,7 @@ const ImageCards = (props) => {
     return (
         <section className={styles.ImagesCard}>
             <div>
-                <h1>Our Work</h1>
+                <h1>Our Innovare</h1>
             </div>
             <div className="container">
                 <div className="row">

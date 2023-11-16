@@ -40,7 +40,6 @@ const TopNav = () => {
   const navLinkStyle = {
     color: scrolling ? 'black' : 'white',
     textDecoration: 'none',
-    cursor:"pointer"
   };
 
   const navbarStyle = {
@@ -208,27 +207,27 @@ const TopNav = () => {
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      <NavLink to="/LogoDesigns" style={navLinkStyle3}>
                         Logo Designing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      <NavLink to="/Animation" style={navLinkStyle3}>
                         Animation 2D, 3D
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      <NavLink to="/SocialMedia" style={navLinkStyle3}>
                         Social Media Management & Marketing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      <NavLink to="/SeoWriting" style={navLinkStyle3}>
                         SEO Writing
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="/WebsiteDesignDevelop" style={navLinkStyle3}>
+                      <NavLink to="/DigitalMarketing" style={navLinkStyle3}>
                         Digital Marketing
                       </NavLink>
                     </li>

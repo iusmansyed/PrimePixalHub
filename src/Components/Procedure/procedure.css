@@ -24,23 +24,24 @@
     font-size: 50px;
     color: black;
 }
-.heading span{
+
+.heading span {
     color: red;
 }
 
 
 
 .step {
-    border: 5px solid red;
+    border: 0.5px solid red;
     padding: 30px 30px;
     margin: 200px 0;
     position: relative;
     z-index: 1;
-    background-color: rgb(199, 199, 199);
-    border-radius: 10px;
+    color: black;
+    background-color: rgb(219, 219, 219);
 }
 
-.step:nth-child(1)::before {
+/* .step:nth-child(1)::before {
     content: '1st Step';
     position: absolute;
     top: -100px;
@@ -91,13 +92,15 @@
     background-color: black;
     color: white;
     font-family:SemiBold ;
-}
-.step h1{
+} */
+.step h1 {
     text-align: center;
     font-family: bold;
+    font-size: 56px;
 }
-.step p{
+
+.step p {
     text-align: center;
-    font-family:reg;
-    
+    font-family: reg;
+    font-size: 32px;
 }
