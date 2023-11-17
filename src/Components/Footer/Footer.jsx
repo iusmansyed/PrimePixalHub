@@ -37,9 +37,9 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-8">
-                            <div className="row align-items-center">
-                                <div className="col">
+                        <div className="col-lg-8 ">
+                            <div className="row align-items-center justify-content-between">
+                                <div className="col-lg-4">
                                     <div className="address">
                                         <h1>Mailing Address</h1>
                                         <p> <TfiLocationPin style={{ fontSize: '25px' }} /> 5900 Balcones Drive STE 100 Austin TX 78731</p>
@@ -53,7 +53,7 @@ const Footer = () => {
                                         <p> <a href="tel:+14097976147"><IoIosCall style={{ fontSize: '25px' }} />  +14097976147 </a></p>
                                     </div>
                                 </div>
-                                <div className="col">
+                                <div className="col-lg-6">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3443.330227978854!2d-97.75752952379061!3d30.341563504431143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cae2f96fffff%3A0xeb7209fa2a453ee9!2s5900%20Balcones%20Dr%20Suite%20100%2C%20Austin%2C%20TX%2078731%2C%20USA!5e0!3m2!1sen!2s!4v1699658535305!5m2!1sen!2s"
                                         width="100%"

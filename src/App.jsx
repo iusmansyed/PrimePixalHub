@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import Contact from './Pages/Contact/Contact'
 import AnimatedCursor from 'react-animated-cursor'
-import Portfolio from './Pages/Portfolio/Portfolio'
+import About from './Pages/Portfolio/About'
 import Work from './Pages/Work/Work'
 import Packages from './Pages/Packages/Packages'
 import Footer from './Components/Footer/Footer'
@@ -81,7 +81,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/about-us" element={<About />} />
         <Route path="/work" element={<Work />} />
         <Route path="/packages" element={<Packages />} />
         <Route path="/WebsiteDesignDevelop" element={<WebsiteDesignDevelop />} />

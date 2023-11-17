@@ -3,8 +3,22 @@ import Banner from '../../Components/Banner/Banner'
 import ImageCards from '../../Components/ImageCards/ImageCards'
 import Cta from '../../Components/CTA/Cta'
 import BgImg from '../../assets/Images/logo-designer.jpg'
-import Img1 from '../../assets/Images/LogoB.png';
 import Video from '../../assets/Images/logoDesign.mp4'
+import Img1 from '../../assets/Images/Logo1.jpg';
+import Img2 from '../../assets/Images/Logo2.jpg';
+import Img3 from '../../assets/Images/Logo3.jpg';
+import Img4 from '../../assets/Images/Logo4.jpg';
+import Img5 from '../../assets/Images/Logo5.jpg';
+import Img6 from '../../assets/Images/Logo6.webp';
+import Img7 from '../../assets/Images/Logo7.webp';
+import Img8 from '../../assets/Images/Logo8.webp';
+
+
+
+
+
+
+
 
 const LogoDesigns = () => {
     const images = [
@@ -13,32 +27,32 @@ const LogoDesigns = () => {
             alt: 'Image 1',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img2,
+            alt: 'Image 2',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img3,
+            alt: 'Image 3',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img4,
+            alt: 'Image 4',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img5,
+            alt: 'Image 5',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img6,
+            alt: 'Image 6',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img7,
+            alt: 'Image 7',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img8,
+            alt: 'Image 8',
         },
         // Add more images as needed
     ];

@@ -4,7 +4,16 @@ import ImageCards from '../../Components/ImageCards/ImageCards';
 import Cta from '../../Components/CTA/Cta';
 import Video from '../../assets/Images/socialMedia.mp4'
 import BgImg from '../../assets/Images/socialMedia.jpg'
-import Img1 from '../../assets/Images/LogoC.png'
+import Img1 from '../../assets/Images/seo1.jpg'
+import Img2 from '../../assets/Images/seo2.jpg'
+import Img3 from '../../assets/Images/seo3.jpg'
+import Img4 from '../../assets/Images/seo4.jpg'
+import Img5 from '../../assets/Images/seo5.jpg'
+import Img6 from '../../assets/Images/seo6.jpg'
+import Img7 from '../../assets/Images/seo7.jpg'
+import Img8 from '../../assets/Images/seo8.jpg'
+
+
 const SocialMedia = () => {
     const images = [
         {
@@ -12,32 +21,32 @@ const SocialMedia = () => {
             alt: 'Image 1',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img2,
+            alt: 'Image 2',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img3,
+            alt: 'Image 3',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img4,
+            alt: 'Image 4',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img5,
+            alt: 'Image 5',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img6,
+            alt: 'Image 6',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img7,
+            alt: 'Image 7',
         },
         {
-            src: Img1,
-            alt: 'Image 1',
+            src: Img8,
+            alt: 'Image 7',
         },
         // Add more images as needed
     ];

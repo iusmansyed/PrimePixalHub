@@ -158,8 +158,8 @@ const TopNav = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to={'/portfolio'} style={navLinkStyle}>
-                  Portfolio
+                <NavLink to={'/about-us'} style={navLinkStyle}>
+                About Us
                 </NavLink>
               </li>
               <li>
@@ -243,8 +243,8 @@ const TopNav = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={'/portfolio'} style={navLinkStyle2}>
-                    Portfolio
+                  <NavLink to={'/about-us'} style={navLinkStyle2}>
+                    About Us
                   </NavLink>
                 </li>
               </ul>
