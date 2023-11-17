@@ -4,41 +4,54 @@ import Video from "../../assets/Images/website.mp4"
 import Cta from '../../Components/CTA/Cta'
 import BgImg from '../../assets/Images/website.jpg'
 import ImageCards from '../../Components/ImageCards/ImageCards'
-import Img1 from '../../assets/Images/LogoA.jpg';
+import Img0 from '../../assets/Images/imgg0.jpg';
+import Img2 from '../../assets/Images/imgg2.jpg';
+import Img3 from '../../assets/Images/imgg3.jpg';
+import Img4 from '../../assets/Images/imgg4.jpg';
+import Img5 from '../../assets/Images/imgg5.jpg';
+import Img01 from '../../assets/Images/imgg01.jpg';
+import Img7 from '../../assets/Images/imgg7.jpg';
+import Img8 from '../../assets/Images/imgg8.jpg';
+
+
+
+
+
+
 
 const WebsiteDesignDevelop = () => {
   const images = [
     {
-        src: Img1,
-        alt: 'Image 1',
+        src: Img0,
+        alt: 'Image 0',
     },
     {
-        src: Img1,
-        alt: 'Image 1',
+        src: Img2,
+        alt: 'Image 2',
     },
     {
-        src: Img1,
-        alt: 'Image 1',
+        src: Img3,
+        alt: 'Image 3',
     },
     {
-        src: Img1,
-        alt: 'Image 1',
+        src: Img4,
+        alt: 'Image 4',
     },
     {
-        src: Img1,
-        alt: 'Image 1',
+        src: Img5,
+        alt: 'Image 5',
     },
     {
-        src: Img1,
-        alt: 'Image 1',
+        src: Img01,
+        alt: 'Image 6',
     },
     {
-        src: Img1,
-        alt: 'Image 1',
+        src: Img7,
+        alt: 'Image 7',
     },
     {
-        src: Img1,
-        alt: 'Image 1',
+        src: Img8,
+        alt: 'Image 8',
     },
     // Add more images as needed
 ];    useEffect(() => {
