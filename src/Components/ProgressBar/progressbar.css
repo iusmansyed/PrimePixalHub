@@ -12,19 +12,34 @@
     font-family: reg;
     src: url("../../assets/Fonts/Poppins-Regular.ttf");
 }
+
 .progressBars {
     background-color: rgba(32, 32, 32, 0.795);
     color: white;
     margin: 20px 0;
     padding: 20px 0;
+
+}
+
+.progressBars h3:nth-child(1) {
+    font-family: SemiBold;
+    color: red;
+}
+.progressBars h3:nth-child(2){
+    font-family: SemiBold;
+    
+}
+.progressBars p {
     font-family: reg;
 
 }
+
 .boxes p {
     position: relative;
     margin-bottom: 0;
 }
-.boxes p:nth-child(1):before{
+
+.boxes p:nth-child(1):before {
     content: '';
     padding: 10px 10px;
     background-color: red;
@@ -32,18 +47,20 @@
     left: -30px;
     top: 10px;
 }
-.boxes p:nth-child(2):before{
+
+.boxes p:nth-child(2):before {
     content: '';
     padding: 10px 10px;
-    background-color:#FF3838;
+    background-color: #FF3838;
     position: absolute;
     left: -30px;
     top: 10px;
 }
-.boxes p:nth-child(3):before{
+
+.boxes p:nth-child(3):before {
     content: '';
     padding: 10px 10px;
-    background-color:#FF7272;
+    background-color: #FF7272;
     position: absolute;
     left: -30px;
     top: 10px;

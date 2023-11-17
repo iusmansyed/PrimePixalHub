@@ -30,9 +30,9 @@ const Footer = () => {
                                 </div>
                                 <div className="socail-content-01">
                                     <ul>
-                                        <li><a href="https://www.instagram.com/?hl=en" target='_blank'> <AiOutlineInstagram style={{ fontSize: "25px" }} /></a></li>
-                                        <li><a href="https://www.facebook.com/blazeinteractives/" target='_blank'><FaFacebookF style={{ fontSize: "25px" }} /></a></li>
-                                        <li><a href="https://www.linkedin.com/company/blaze-interactives/" target='_blank'><AiFillLinkedin style={{ fontSize: "25px" }} /></a></li>
+                                        <li><a href="https://instagram.com/primepixelhub?igshid=YTQwZjQ0NmI0OA==" target='_blank'> <AiOutlineInstagram style={{ fontSize: "25px" }} /></a></li>
+                                        <li><a href="https://www.facebook.com/profile.php?id=61553650501265" target='_blank'><FaFacebookF style={{ fontSize: "25px" }} /></a></li>
+                                        <li><a href="https://www.linkedin.com/company/prime-pixel-hub/about/" target='_blank'><AiFillLinkedin style={{ fontSize: "25px" }} /></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -50,7 +50,7 @@ const Footer = () => {
                                     </div>
                                     <div className="address">
                                         <h1>Email</h1>
-                                        <p> <a href="tel:202-456-2121"><IoIosCall style={{ fontSize: '25px' }} />  202-456-2121 </a></p>
+                                        <p> <a href="tel:+14097976147"><IoIosCall style={{ fontSize: '25px' }} />  +14097976147 </a></p>
                                     </div>
                                 </div>
                                 <div className="col">

@@ -123,7 +123,7 @@ const Home = () => {
   return (
     <>
   
-      <Banner video={Video} heading={"Elevate Your Brand with"} spanText={"Exceptional Design"} subHeading={"Crafting Visual Excellence to Propel Your Success"} para={"Welcome to Design Hub - the vibrant and visionary creative studio where we breathe life into your brand's dreams. Here, we don't just create visuals; we craft experiences that linger in the minds of your audience. At Design Hub, every pixel, every color, and every idea is not just carefully curated; they are meticulously woven into a tapestry of creativity to make your brand truly unforgettable. We don't see ourselves as mere designers; we are brand architects, and our mission is to shape the identity and narrative of your business in a way that resonates with your target audience. Our team of passionate creatives, strategists, and storytellers work in unison to understand the core of your brand. We believe that a brand is not just a logo or a product; it's an embodiment of your vision, values, and aspirations. We are here to bring that vision to life."} columns={'col-lg-7 '} />
+      <Banner video={Video} heading={"Elevate Your Brand with"} spanText={"Exceptional Design"} subHeading={"Crafting Visual Excellence to Propel Your Success"} para={"Welcome to Design Hub – where we turn your brand's dreams into vibrant realities. More than designers, we're architects crafting unforgettable experiences. Every pixel, color, and idea is woven with creativity, shaping your brand's identity. Beyond visuals, we're storytellers on a mission to resonate with your audience. Our team, a fusion of passion and strategy, delves deep into your brand essence."} columns={'col-lg-7 '} />
       <section className={styles.Business}>
         <div className="container">
           <div className="row">
@@ -144,7 +144,7 @@ const Home = () => {
                   })}
                 </div>
                 <div className={styles.btns}>
-                  <a href="tel:+798564312"><Buttons title={"Contact Us"} border={"1px solid red"} /></a>
+                  <a href="tel:+14097976147"><Buttons title={"Contact Us"} border={"1px solid red"} /></a>
                   <Buttons title={"Get A Qoute"} border={"1px solid red"} onClick={openModal} />
                 </div>
               </div>
@@ -207,7 +207,7 @@ const Home = () => {
                 </ul>
               </div>
               <div className={styles.btns}>
-                <a href="tel:+798564312"><Buttons title={"Call Now"} border={"1px solid red"} /></a>
+                <a href="tel:+14097976147"><Buttons title={"Call Now"} border={"1px solid red"} /></a>
                 <Buttons title={"Get A Free Qoute"} border={"1px solid red"} onClick={openModal} />
               </div>
             </div>

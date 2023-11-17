@@ -19,21 +19,26 @@ const Cta = (props) => {
         backgroundSize: 'cover',
         height: '100%',
         backgroundAttachment: 'fixed'
-      };
+    };
     return (
         <section className={styles.cta}>
-            <ModalPop show={showModal} handleClose={closeModal}/>
+            <ModalPop show={showModal} handleClose={closeModal} />
             <div class={styles.gif_container} style={divStyle}>
 
                 <div class={styles.content}>
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
-                                <h1>{props.heading} <span style={{color:props.spanColor}}>{props.spanHeading}</span></h1>
+                                <h1>{props.heading} <span style={{ color: props.spanColor }}>{props.spanHeading}</span></h1>
                                 <h3>{props.subHeading}</h3>
+                                <ul style={{ listStyle: "none", padding: '10px 0' }}>
+                                    {props?.list?.map((item, index) => (
+                                        <li key={index}>{item.text}</li>
+                                    ))}
+                                </ul>
                                 <h4>{props.text}</h4>
                                 <div className={styles.btns}>
-                                <a href="tel:+798564312"><Buttons title={"Talk To An Expert"} /></a>
+                                    <a href="tel:+14097976147"><Buttons title={"Talk To An Expert"} /></a>
                                     <Buttons title={"Get A Free Quote"} onClick={openModal} />
                                 </div>
                             </div>

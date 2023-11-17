@@ -113,8 +113,8 @@ const Banner = (props) => {
               <div className="col-lg-5 " style={{ display: props.formDisplay }}>
                 <ModalPop show={showModal} handleClose={closeModal} />
                 <div className={styles.formSec} >
-                  <h1>Rank Higher</h1>
-                  <h3>With SEO By <span>PrimePixelHub</span></h3>
+                  <h1>Rank Up</h1>
+                  <h3>With <span>PrimePixelHub</span></h3>
                   <form onSubmit={handleFormSubmit}>
                     <div className="form-group">
                       <label for="formGroupExampleInput"><span style={{ color: "red" }}>*</span>Name</label>

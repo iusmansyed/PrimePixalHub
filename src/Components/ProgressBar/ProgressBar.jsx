@@ -9,7 +9,9 @@ const ProgressBar = ({ percentage }) => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-4">
-                        We are the only place you need to go for a full range of digital services. From fascinating website and logo designs that define your brand identity to expertly selected social media marketing and management strategies that nurture engagement, and cutting-edge digital marketing solutions, we seamlessly blend creativity and strategy to elevate your online presence. Count on us to be your partners on the digital journey, where each campaign, click, and design is carefully thought out to make sure your brand not only survives but flourishes in the ever-changing digital space.
+                        <h3>Every Click Counts! </h3>
+                        <p>Our all-in-one destination for Digital Excellence. From captivating designs defining your brand to strategic marketing solutions</p>
+                        <h3>Design, Marketing, Strategy – We Do It All!</h3>
                         </div>
                         <div className="col-lg-5 d-flex align-items-center justify-content-center">
                             <div className="bars" style={{ width: '400px' }}>
