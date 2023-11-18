@@ -14,12 +14,6 @@ import Img7 from '../../assets/Images/Logo7.webp';
 import Img8 from '../../assets/Images/Logo8.webp';
 
 
-
-
-
-
-
-
 const LogoDesigns = () => {
     const images = [
         {

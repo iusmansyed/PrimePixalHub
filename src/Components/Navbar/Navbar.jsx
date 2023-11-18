@@ -171,7 +171,8 @@ const TopNav = () => {
               </li>
               <li>
                 <Buttons
-                  title={'Get Started'}
+              
+                  title={'Get  Started'}
                   Color={'transparent'}
                   textColor={scrolling ? 'black' : 'white'}
                   onClick={openModal}

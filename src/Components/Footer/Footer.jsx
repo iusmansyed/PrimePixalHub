@@ -49,7 +49,7 @@ const Footer = () => {
                                         <p> <BsFillChatRightTextFill style={{ fontSize: '25px' }} />  Info@primepixelhub.com </p>
                                     </div>
                                     <div className="address">
-                                        <h1>Email</h1>
+                                        <h1>Phone</h1>
                                         <p> <a href="tel:+14097976147"><IoIosCall style={{ fontSize: '25px' }} />  +14097976147 </a></p>
                                     </div>
                                 </div>
