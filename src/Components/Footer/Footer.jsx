@@ -2,7 +2,6 @@ import React from 'react'
 import "./Footer.css"
 import { AiFillLinkedin, AiOutlineInstagram } from 'react-icons/ai'
 import { FaFacebookF } from 'react-icons/fa'
-import { NavLink } from 'react-router-dom'
 import Logo from "../../assets/Images/logo.png"
 import { TfiLocationPin } from 'react-icons/tfi'
 import { IoIosCall } from 'react-icons/io'
@@ -49,7 +48,7 @@ const Footer = () => {
                                         <p> <BsFillChatRightTextFill style={{ fontSize: '25px' }} />  Info@primepixelhub.com </p>
                                     </div>
                                     <div className="address">
-                                        <h1>Email</h1>
+                                        <h1>Phone</h1>
                                         <p> <a href="tel:+14097976147"><IoIosCall style={{ fontSize: '25px' }} />  +14097976147 </a></p>
                                     </div>
                                 </div>
