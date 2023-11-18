@@ -6,6 +6,10 @@ import Buttons from '../Buttons/Buttons'
 import { Dropdown } from 'bootstrap'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 const Banner = (props) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -16,6 +20,7 @@ const Banner = (props) => {
     number: '',
     selectedOption: ''
   })
+
   const { name, email, number, selectedOption } = data
   const [selectedValue, setSelectedValue] = useState('');
   const options = ['Website Designing & Development', ' Logo Designing', '2D / 3D Animation', 'Social Media Marketing & Management ', 'SEO Writing', 'Digital Marketing'];
@@ -34,13 +39,13 @@ const Banner = (props) => {
     setShowModal(false);
   };
   const handleFormSubmit = async (e) => {
-    e.preventDefault(); // Corrected "prevent" to "preventDefault"
+    e.preventDefault(); 
     if (name != '' && email != '' && number != '') {
       try {
         const res = await fetch('https://v1.nocodeapi.com/primepixelhub/google_sheets/vbBrehfJsVjddVLR?tabId=Sheet1', {
           method: "POST",
           headers: {
-            'Content-Type': 'application/json', // Corrected "content-Type" to "Content-Type"
+            'Content-Type': 'application/json', 
           },
           body: JSON.stringify([[name, email, number, selectedOption, new Date().toLocaleString()]])
         });
@@ -99,7 +104,7 @@ const Banner = (props) => {
         <div className={styles.content}>
           <div className='container'>
             <div className="row">
-              <div className={props.columns}>
+              <div className={props.columns} data-aos="fade-up">
                 <div className={styles.bannerHeading}>
                   <h1>{props.heading}<span>{props.spanText}</span></h1>
                   <h3>{props.subHeading}</h3>
@@ -112,7 +117,7 @@ const Banner = (props) => {
               </div>
               <div className="col-lg-5 " style={{ display: props.formDisplay }}>
                 <ModalPop show={showModal} handleClose={closeModal} />
-                <div className={styles.formSec} >
+                <div className={styles.formSec} data-aos="fade-down" data-aos-duration="1500" >
                   <h1>Rank Up</h1>
                   <h3>With <span>PrimePixelHub</span></h3>
                   <form onSubmit={handleFormSubmit}>

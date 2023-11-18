@@ -4,13 +4,13 @@ import ImageCards from '../../Components/ImageCards/ImageCards';
 import Cta from '../../Components/CTA/Cta';
 import Video from '../../assets/Images/socialMedia.mp4'
 import BgImg from '../../assets/Images/socialMedia.jpg'
-import Img1 from '../../assets/Images/seo1.jpg'
-import Img2 from '../../assets/Images/seo2.jpg'
-import Img3 from '../../assets/Images/seo3.jpg'
-import Img4 from '../../assets/Images/seo4.jpg'
-import Img5 from '../../assets/Images/seo5.jpg'
-import Img6 from '../../assets/Images/seo6.jpg'
-import Img7 from '../../assets/Images/seo7.jpg'
+import Img1 from '../../assets/Images/s1-min.jpg'
+import Img2 from '../../assets/Images/s2-min.jpg'
+import Img3 from '../../assets/Images/s3-min.jpg'
+import Img4 from '../../assets/Images/s4-min.jpg'
+import Img5 from '../../assets/Images/s5-min.jpg'
+import Img6 from '../../assets/Images/s6-min.jpg'
+import Img7 from '../../assets/Images/s7-min.jpg'
 import Img8 from '../../assets/Images/seo8.jpg'
 
 
@@ -46,7 +46,7 @@ const SocialMedia = () => {
         },
         {
             src: Img8,
-            alt: 'Image 7',
+            alt: 'Image 8',
         },
         // Add more images as needed
     ];
