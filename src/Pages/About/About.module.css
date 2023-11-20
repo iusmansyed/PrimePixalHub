@@ -1,47 +1,112 @@
 @font-face {
-    font-family: bold;
-    src: url("../../assets/Fonts/Poppins-Bold.ttf");
- }
- 
- @font-face {
-    font-family: SemiBold;
-    src: url("../../assets/Fonts/Poppins-SemiBold.ttf");
- }
- 
- @font-face {
-    font-family: reg;
-    src: url("../../assets/Fonts/Poppins-Regular.ttf");
- }
- 
- .sec_1 {
-    padding: 100px 0;
- }
- 
- .wrapper_1 img {
-    width: 100%;
- }
- 
- .wrapper_2 h1 {
-    font-family: bold;
-    text-align: center;
-    color: black;
- }
- 
- .wrapper_2 h5 {
-    font-family: reg;
-    text-align: center;
- }
- 
- .listed {
-    padding: 30px 0;
- }
- 
- .listed ul li {
-    font-family: SemiBold;
-    font-size: 30px;
- }
- 
- .listed  p {
-    font-family: reg;
- line-height: 20px;
- }
+   font-family: bold;
+   src: url("../../assets/Fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+   font-family: SemiBold;
+   src: url("../../assets/Fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+   font-family: reg;
+   src: url("../../assets/Fonts/Poppins-Regular.ttf");
+}
+
+.sec_1 {
+   padding: 100px 0;
+}
+.wrapper_1{
+   border: 5px solid red;
+   padding: 10px;
+}
+.wrapper_1 img {
+   width: 100%;
+}
+
+.wrapper_2 h1 {
+   font-family: bold;
+   text-align: center;
+   color: black;
+}
+
+.wrapper_2 h5 {
+   font-family: reg;
+   text-align: center;
+}
+
+.listed {
+   padding: 30px 0;
+}
+
+.listed ul li {
+   font-family: SemiBold;
+   font-size: 30px;
+}
+
+.listed p {
+   font-family: reg;
+   line-height: 20px;
+}
+
+.sec_2 {
+   padding: 50px 0;
+}
+
+.heading {
+   text-align: center;
+   color: black;
+   padding: 30px;
+}
+
+.heading h1 {
+   text-transform: uppercase;
+   font-family: bold;
+}
+
+.heading h3 {
+   font-family: SemiBold;
+}
+
+.heading h3 span {
+   color: red;
+}
+
+.heading p {
+   font-family: reg;
+}
+
+.points {
+   text-align: center;
+   color: black;
+   padding: 30px;
+   border: 1px solid red;
+   height: 200px;
+   border-radius: 12px;
+   transition: 0.5s;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.points:hover{
+   background-color: red;
+   color: white;
+   transform: scale(1.02);
+}
+
+.points h1 {
+   text-transform: uppercase;
+   font-family: bold;
+}
+
+.points h3 {
+   font-family: SemiBold;
+}
+
+.points h3 span {
+   color: red;
+}
+
+.points p {
+   font-family: SemiBold;
+   line-height: 20px;
+}

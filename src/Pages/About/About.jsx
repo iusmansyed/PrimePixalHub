@@ -10,7 +10,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <Banner btns={'none'} video={Video} heading={"About Us "} spanText={''} subHeading={"-Catalyzing Digital Growth Initiatives"} para={"Our focus extends beyond digital presence. Our objective is to completely transform user experiences by making every interaction smooth, understandable, and unforgettable. Our unwavering commitment to unparalleled growth drives us toward horizons where possibilities are limitless, and success knows no bounds."} formDisplay={'none'} columns={'col-lg-9'} />
+      <Banner btns={'none'} video={Video} heading={"About  "} spanText={'Us'} subHeading={"-Catalyzing Digital Growth Initiatives"} para={"Our focus extends beyond digital presence. Our objective is to completely transform user experiences by making every interaction smooth, understandable, and unforgettable. Our unwavering commitment to unparalleled growth drives us toward horizons where possibilities are limitless, and success knows no bounds."} formDisplay={'none'} columns={'col-lg-9'} />
       <section className={styles.sec_1}>
         <div className="container">
           <div className="row align-items-center" >
@@ -41,32 +41,27 @@ const About = () => {
             <div className='col-lg-12' >
               <div className={styles.heading}>
                 <h1>Our Dedication</h1>
-                <h3>Interactive Business Solutions</h3>
+                <h3>Interactive Business <span>Solutions</span></h3>
                 <p>We seamlessly integrate our expertise with your unique business structures, ensuring a peaceful collaboration that maximizes impact.</p>
               </div>
             </div>
 
-              {/* <div className={styles.wrapper_3}>
-                <h1>Our Dedication</h1>
-                <h3>Interactive Business Solutions</h3>
-                <p>We seamlessly integrate our expertise with your unique business structures, ensuring a peaceful collaboration that maximizes impact.</p>
-                <h3>Our Vision </h3>
-                <h3>Interactive Business Solutions</h3>
-                <p>Our goal is to ensure that future generations can live in a sustainable and prosperous world by embracing environmental responsibility.</p>
-                <h3>Our Mission</h3>
-                <h3>Interactive Business Solutions</h3>
-                <p>We offer a dedicated platform for their software development needs, ensuring each project is met with the utmost quality. Come along with us as we work to translate goals into technological triumphs.</p>
-              </div> */}
-              <div className="col-lg-6">
+
+            <div className="col-lg-6">
+              <div className={styles.points}>
                 <h1>Our Vision</h1>
                 <h3>Interactive Business Solutions</h3>
                 <p>Our goal is to ensure that future generations can live in a sustainable and prosperous world by embracing environmental responsibility.</p>
               </div>
-              <div className="col-lg-6">
-              <h1>Our Mission</h1>
+            </div>
+            <div className="col-lg-6">
+             <div className={styles.points}>
+             <h1>Our Mission</h1>
               <h3>Interactive Business Solutions</h3>
-                <p>We offer a dedicated platform for their software development needs, ensuring each project is met with the utmost quality. Come along with us as we work to translate goals into technological triumphs.</p>  
-              </div>
+              <p>We offer a dedicated platform for their software development needs, ensuring each project is met with the utmost quality. Come along with us as we work to translate goals into technological triumphs.</p>
+           
+             </div>
+            </div>
           </div>
 
         </div>
