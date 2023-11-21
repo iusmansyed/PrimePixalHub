@@ -6,6 +6,16 @@ import Logo from "../../assets/Images/logo.png"
 import { TfiLocationPin } from 'react-icons/tfi'
 import { IoIosCall } from 'react-icons/io'
 import { BsFillChatRightTextFill } from 'react-icons/bs'
+import { RiVisaFill } from "react-icons/ri";
+import { FaCcPaypal } from "react-icons/fa6";
+import Image1 from '../../assets/Images/cc.png'
+import Image2 from '../../assets/Images/mc.png'
+import Image3 from '../../assets/Images/paypal.png'
+import Image4 from '../../assets/Images/py.png'
+import Image5 from '../../assets/Images/stripe.png'
+import Image6 from '../../assets/Images/vc.png'
+
+
 const Footer = () => {
 
     const navLinkStyle = {
@@ -45,11 +55,22 @@ const Footer = () => {
                                     </div>
                                     <div className="address">
                                         <h1>Email</h1>
-                                        <p> <BsFillChatRightTextFill style={{ fontSize: '25px' }} />  Info@primepixelhub.com </p>
+                                        <p> <BsFillChatRightTextFill style={{ fontSize: '25px' }} /> primepixelhub@gmail.com</p>
                                     </div>
                                     <div className="address">
                                         <h1>Phone</h1>
                                         <p> <a href="tel:+14097976147"><IoIosCall style={{ fontSize: '25px' }} />  +14097976147 </a></p>
+                                    </div>
+                                    <div className="address">
+                                        <h1>securities</h1>
+                                        <div style={{ display: 'flex', justifyContent: 'flex-start', width: "50px" }}>
+                                            <img src={Image1} alt="" width={'200px'} />
+                                            <img src={Image2} alt="" />
+                                            <img src={Image3} alt="" />
+                                            <img src={Image4} alt="" />
+                                            <img src={Image5} alt="" />
+                                            <img  src={Image6} alt="" />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
