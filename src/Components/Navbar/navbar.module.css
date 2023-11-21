@@ -44,11 +44,20 @@
     text-decoration: none;
 }
 
-.links ul li:nth-child(7) {
+.links ul li:nth-child(5) {
     border: none;
 }
 
-.links ul li:nth-child(7):hover {
+.links ul li:nth-child(5):hover {
+    border: none;
+    transform: scale(1);
+
+}
+.links ul li:nth-child(6) {
+    border: none;
+}
+
+.links ul li:nth-child(6):hover {
     border: none;
     transform: scale(1);
 
