@@ -10,7 +10,7 @@ const About = () => {
   }, []);
   return (
     <>
-      <Banner btns={'none'} video={Video} heading={"About  "} spanText={'Us'} subHeading={"-Catalyzing Digital Growth Initiatives"} para={"Our focus extends beyond digital presence. Our objective is to completely transform user experiences by making every interaction smooth, understandable, and unforgettable. Our unwavering commitment to unparalleled growth drives us toward horizons where possibilities are limitless, and success knows no bounds."} formDisplay={'none'} columns={'col-lg-9'} />
+      <Banner btns={'none'} video={Video} heading={"About"} spanText={'Us'} subHeading={"-Catalyzing Digital Growth Initiatives"} para={"Our focus extends beyond digital presence. Our objective is to completely transform user experiences by making every interaction smooth, understandable, and unforgettable. Our unwavering commitment to unparalleled growth drives us toward horizons where possibilities are limitless, and success knows no bounds."} formDisplay={'none'} columns={'col-lg-9'} />
       <section className={styles.sec_1}>
         <div className="container">
           <div className="row align-items-center" >

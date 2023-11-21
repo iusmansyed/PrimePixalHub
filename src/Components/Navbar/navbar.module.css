@@ -44,20 +44,26 @@
     text-decoration: none;
 }
 
-.links ul li:nth-child(7) {
-    border: none;
-}
 
-.links ul li:nth-child(7):hover {
-    border: none;
-    transform: scale(1);
 
-}
+
 
 .links ul li:hover {
     border-bottom: 2px solid red;
-
     transform: scale(1.1);
+   
+}
+.links ul li:nth-child(5){
+    border: none;
+}
+.links ul li:nth-child(6){
+    border: none;
+}
+.links ul li:hover:nth-child(5) {
+    border: none;
+}
+.links ul li:hover:nth-child(6) {
+    border: none;
 }
 
 .links2 {
@@ -70,6 +76,16 @@
 
 .subLinks ul li:hover {
     border-bottom: 1px solid red;
+    transform: none;
+
+}
+.subLinks ul li:hover:nth-child(5) {
+    border-bottom: none;
+    transform: none;
+
+}
+.subLinks ul li:hover:nth-child(6) {
+    border-bottom: none;
     transform: none;
 
 }
@@ -121,6 +137,7 @@
         background-color: red;
         color: white;
     }
+   
 
     .logo2 {
         width: 80px;

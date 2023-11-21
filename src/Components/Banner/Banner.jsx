@@ -42,7 +42,7 @@ const Banner = (props) => {
     e.preventDefault(); 
     if (name != '' && email != '' && number != '') {
       try {
-        const res = await fetch('https://v1.nocodeapi.com/primepixelhub/google_sheets/vbBrehfJsVjddVLR?tabId=Sheet1', {
+        const res = await fetch('https://v1.nocodeapi.com/prime_pixel_hub/google_sheets/OWtqTpppCvNZTSgi?tabId=Sheet1', {
           method: "POST",
           headers: {
             'Content-Type': 'application/json', 
@@ -118,7 +118,7 @@ const Banner = (props) => {
               <div className="col-lg-5 " style={{ display: props.formDisplay }}>
                 <ModalPop show={showModal} handleClose={closeModal} />
                 <div className={styles.formSec} data-aos="fade-down" data-aos-duration="1500" >
-                  <h1>Rank Up</h1>
+                  <h1>Sign Up</h1>
                   <h3>With <span>PrimePixelHub</span></h3>
                   <form onSubmit={handleFormSubmit}>
                     <div className="form-group">
