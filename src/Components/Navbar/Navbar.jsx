@@ -105,6 +105,12 @@ const TopNav = () => {
           </div>
           <div className={styles.links}>
             <ul>
+            <li>
+                <NavLink to="/" style={navLinkStyle3}>
+                        Home
+                      </NavLink>
+                    </li>
+              
               <li
                 onMouseEnter={() => setDropdownVisible(true)}
                 onMouseLeave={() => setDropdownVisible(false)}
@@ -163,6 +169,11 @@ const TopNav = () => {
                 </NavLink>
               </li>
               <li>
+                <NavLink to={'/Portfolio'} style={navLinkStyle}>
+                Portfolio
+                </NavLink>
+              </li>
+              <li>
                 <a href="tel:+14097976147">
                   <BiSolidPhoneCall
                     style={{ color: scrolling ? 'black' : 'red', fontSize: '24px' }}
@@ -180,6 +191,9 @@ const TopNav = () => {
               </li>
             </ul>
           </div>
+        
+        {/* ================================================== respnsive =================================================== */}
+        
           <div className={styles.links2}>
             <div className={styles.menu} onClick={() => setMenu(!menu)}>
               <AiOutlineMenu className="" style={{ fontSize: '25px', color: 'red' }} />
@@ -194,6 +208,11 @@ const TopNav = () => {
               }}
             >
               <ul>
+              <li>
+                  <NavLink to={'/'} style={navLinkStyle2}>
+                    Home
+                  </NavLink>
+                </li>
               <li onClick={handleDropdownToggle}>
                 <div className={styles.subLinks}>
                   <NavLink to="/services" style={navLinkStyle}>
@@ -246,6 +265,11 @@ const TopNav = () => {
                 <li>
                   <NavLink to={'/about-us'} style={navLinkStyle2}>
                     About Us
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to={'/Portfolio'} style={navLinkStyle2}>
+                  Portfolio
                   </NavLink>
                 </li>
               </ul>

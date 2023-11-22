@@ -48,36 +48,36 @@
     border: none;
 }
 
-.links ul li:nth-child(5):hover {
+.links ul li:nth-child(8):hover {
     border: none;
     transform: scale(1);
 
 }
-.links ul li:nth-child(6) {
+.links ul li:nth-child(7) {
     border: none;
 }
 
-.links ul li:nth-child(6):hover {
+.links ul li:nth-child(8):hover {
     border: none;
     transform: scale(1);
 
-
+}
 
 .links ul li:hover {
     border-bottom: 2px solid red;
     transform: scale(1.1);
    
 }
-.links ul li:nth-child(5){
+.links ul li:nth-child(7){
     border: none;
 }
-.links ul li:nth-child(6){
+.links ul li:nth-child(8){
     border: none;
 }
-.links ul li:hover:nth-child(5) {
+.links ul li:hover:nth-child(7) {
     border: none;
 }
-.links ul li:hover:nth-child(6) {
+.links ul li:hover:nth-child(8) {
     border: none;
 }
 
@@ -94,12 +94,12 @@
     transform: none;
 
 }
-.subLinks ul li:hover:nth-child(5) {
+.subLinks ul li:hover:nth-child(7) {
     border-bottom: none;
     transform: none;
 
 }
-.subLinks ul li:hover:nth-child(6) {
+.subLinks ul li:hover:nth-child(8) {
     border-bottom: none;
     transform: none;
 

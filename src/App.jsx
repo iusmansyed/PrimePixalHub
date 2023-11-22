@@ -16,6 +16,7 @@ import Animation from './Pages/Animation/Animation'
 import SocialMedia from './Pages/SocialMedia/SocialMedia'
 import SeoWriting from './Pages/SeoWriting/SeoWriting'
 import DigitalMarketing from './Pages/DigitalMarketing/DigitalMarketing'
+import Portfolio from './Pages/Portfolio/Portfolio'
 function App() {
 
 
@@ -90,6 +91,7 @@ function App() {
         <Route path="/SocialMedia" element={<SocialMedia />} />
         <Route path="/SeoWriting" element={<SeoWriting />} />
         <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
+        <Route path="/Portfolio" element={<Portfolio />} />
       </Routes>
       <Footer/>
     </>
